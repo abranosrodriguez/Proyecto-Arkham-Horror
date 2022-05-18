@@ -39,6 +39,8 @@
 
 /* Lugares */
 #tablero {
+    display: flex;
+    justify-content: space-evenly;
     margin: 3vh;
 }
 
@@ -46,6 +48,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
 }
 
 .lugares_cartas {
@@ -54,6 +57,19 @@
     width: auto;
     height: 10vh;
 }
+
+#suministros {
+    justify-content: space-around;
+    width: auto;
+    height: 25vh;
+}
+
+#bolsa_fichas {
+    justify-content: space-around;
+    width: auto;
+    height: 20vh;
+}
+
 
 /* --------------------------------------------- */
 
