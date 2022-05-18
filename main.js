@@ -1,4 +1,8 @@
 function main() {
+    //Datos del mazo donde están las 3 clases de cartas: [ Apoyo | Evento | Habilidad ]
+    datos_mazo()
+    cartas_mano = []
+
     RolandBanks = Datos_Roland_Banks()
     // var Carta_Automatica_45 = new Cartas_Apoyo(4, "apoyo", "automatica 45", "guardian", "1-agilidad", 0, 1, 1)
     // var Carta_Entrenamiento_fisico = new Cartas_Apoyo(2, "apoyo", "Entrenamiento Fisico", "Guardian", "1 Cabenza, 1 puño", false, false, 2)
@@ -9,11 +13,15 @@ function main() {
         "Fase Investigacion" + "\n     3 Acciones" + "\nFase de Enemigo" + "\nFase de Mantenimiento" + "\nFase de Mitos"
     )
     console.log(RolandBanks)
-    acciones_jugador(RolandBanks)
-    grupo_apoyo = Datos_Cartas_Apoyo()
-    grupo_evento = Datos_Cartas_Evento()
-    grupo_habilidad = Datos_Cartas_Habilidad()
 
-    mazo(grupo_apoyo, grupo_evento, grupo_habilidad)
+    acciones_jugador(RolandBanks)
+
+
+    pruebas_prompt()
+
+    //Nos permitirá robar la carta
+    //robar_carta()
+
+
 }
 main()
