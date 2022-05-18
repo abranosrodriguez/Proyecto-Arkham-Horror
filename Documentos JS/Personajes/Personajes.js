@@ -1,5 +1,5 @@
 class Personajes {
-    constructor(nombre, apodo, clase, voluntad, intelecto, combate, agilidad, apodo2, habilidad_pasiva, habilidad_activa, descripcion_corta, vida, cordura) {
+    constructor(nombre, apodo, clase, voluntad, intelecto, combate, agilidad, apodo2, habilidad_pasiva, habilidad_activa, descripcion_corta, vida, cordura, suministros, pistas) {
         this.nombre = nombre;
         this.apodo = apodo;
         this.clase = clase;
@@ -12,6 +12,8 @@ class Personajes {
         this.habilidad_activa = habilidad_activa;
         this.descripcion_corta = descripcion_corta;
         this.vida = vida;
-        this.cordura = cordura
+        this.cordura = cordura;
+        this.suministros = suministros;
+        this.pistas = pistas;
     }
 }
