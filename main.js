@@ -17,7 +17,7 @@ function main() {
     acciones_jugador(RolandBanks)
 
 
-    pruebas_prompt()
+    // pruebas_prompt()
 
     //Nos permitirá robar la carta
     //robar_carta()
