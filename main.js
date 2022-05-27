@@ -15,7 +15,7 @@ function main() {
     console.log(RolandBanks)
 
     acciones_jugador(RolandBanks)
-
+    Datos_Cartas_Lugares_Descubiertos()
 
     pruebas_prompt()
 
