@@ -2,6 +2,9 @@ function main() {
     //Datos del mazo donde están las 3 clases de cartas: [ Apoyo | Evento | Habilidad ]
     datos_mazo()
     cartas_mano = []
+    Datos_Cartas_Lugares_Descubiertos()
+    // console.log(grupo_lugares_revelados)
+    // Buscar_Carta_Lugar()
 
     RolandBanks = Datos_Roland_Banks()
     // var Carta_Automatica_45 = new Cartas_Apoyo(4, "apoyo", "automatica 45", "guardian", "1-agilidad", 0, 1, 1)
@@ -15,7 +18,7 @@ function main() {
     console.log(RolandBanks)
 
     acciones_jugador(RolandBanks)
-    Datos_Cartas_Lugares_Descubiertos()
+
 
     pruebas_prompt()
 
