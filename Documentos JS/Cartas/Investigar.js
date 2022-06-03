@@ -11,23 +11,40 @@ function Investigar_Lugar() {
     ubicacion_pasillo = true
 
     if (ubicacion_pasillo == true) {
-        investigar = prompt(`Nombre del Lugar: ${estudio.nombre} \nNumero de pistas en el lugar: ${estudio.pistas_investigador} \nQuieres usar alguna carta para potenciarte? Si | No`)
+        investigar = prompt(`Nombre del Lugar: ${estudio.nombre} \nNumero de pistas en el lugar: ${estudio.pistas_investigador} \nQuieres usar alguna carta para potenciarte? Si | No | Comprobar`)
         if (investigar == "no" || investigar == "no") {
-            ficha = sacar_ficha_facil()
-            resultado_prueba = (RolandBanks.intelecto - ficha)
-            console.log("Dificultad:" + estudio.dificultad)
-            console.log("Intelecto: " + RolandBanks.intelecto)
-            console.log("Ficha: " + ficha)
-            console.log("Resultado: " + resultado_prueba)
+            Prueba_Intelecto()
 
-            if (estudio.dificultad <= resultado_prueba) {
-                alert("Ganas")
-            } else {
-                alert("Pierdes")
-            }
         } else if (investigar == "si" || investigar == "Si") {
+            carta_usuario_usar = prompt("Dame un nombre de la carta")
             for (i = 0; i < cartas_mano.length; i++) {
-                alert(`Escoge una carta: \n${JSON.stringify(cartas_mano[i])}`)
+                if (carta_usuario_usar == cartas_mano[i].nombre) {
+                    carta_para_descartar = cartas_mano.indexOf(cartas_mano[i])
+
+                    cartas_descartadas.push(cartas_mano[i])
+                    console.log("Cartas Descartadas:")
+                    console.log(cartas_descartadas)
+                    console.log("                                   ")
+                    console.log("Cartas Mano:")
+                    console.log(cartas_mano[i])
+
+                    if (carta_para_descartar > -1) {
+                        cartas_mano.splice(carta_para_descartar, 1)
+                    }
+                    // RolandBanks.sumar_Intelecto(cartas_mano[i].icono_intelecto)
+                }
+            }
+
+
+        } else if (investigar == "comprobar" || investigar == "Comprobar") {
+            for (i = 0; i < cartas_mano.length; i++) {
+                if (cartas_mano[i].icono_intelecto >= 1) {
+                    alert(`Nombre carta: ${cartas_mano[i].nombre} \nIntelecto: ${cartas_mano[i].icono_intelecto}`)
+                } else if (cartas_mano[i].icono_comodin >= 1) {
+                    alert(`Nombre carta: ${cartas_mano[i].nombre} \nComodin: ${cartas_mano[i].icono_comodin}`)
+                }
+
+                // alert(`Escoge una carta: \n${JSON.stringify(cartas_mano[i])}`)
             }
 
 

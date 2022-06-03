@@ -2,6 +2,7 @@ function main() {
     //Datos del mazo donde están las 3 clases de cartas: [ Apoyo | Evento | Habilidad ]
     datos_mazo()
     cartas_mano = []
+    cartas_descartadas = []
     Datos_Cartas_Lugares_Descubiertos()
     // console.log(grupo_lugares_revelados)
     // Buscar_Carta_Lugar()
