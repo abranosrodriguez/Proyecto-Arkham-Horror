@@ -6,6 +6,8 @@ function pruebas_prompt() {
     ubicacion_atico = false
     ubicacion_sotano = false
 
+    ficha_mitos = 0
+
     estudio = grupo_lugares_revelados[0]
     pasillo = grupo_lugares_revelados[1]
     atico = grupo_lugares_revelados[2]
@@ -17,6 +19,7 @@ function pruebas_prompt() {
             alert("Fase de Mantenimiento")
             alert("Fase de Mitos")
             acciones_jugador = 3
+            ficha_mitos++
         } else {
             if (robar_cinco_cartas == true) {
                 robar_cinco_cartas_turno_inicial()
