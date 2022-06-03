@@ -13,7 +13,7 @@ function pruebas_prompt() {
     atico = grupo_lugares_revelados[2]
     sotano = grupo_lugares_revelados[3]
 
-    while (incio != 6) {
+    while (incio != 7) {
         if (acciones_jugador == 0) {
             alert("Fase de Enemigos \n Los enemigos con Cazador se mueven \n Cada Enemigo enfrentado ataca")
             alert("Fase de Mantenimiento")
@@ -27,7 +27,7 @@ function pruebas_prompt() {
 
             } else if (robar_cinco_cartas == false) {
                 if (ubicacion_estudio != false) {
-                    var incio = prompt(`Turnos Restantes: ${acciones_jugador} \nLocalización: Estudio \nEstas en tu turno, que quieres hacer? \n1 - Robar Carta \n2 - Suministro \n3 - Comprobar Cartas de Mano \n4 - Investigar \n6 - Salir`)
+                    var incio = prompt(`Turnos Restantes: ${acciones_jugador} \nLocalización: Estudio \nEstas en tu turno, que quieres hacer? \n1 - Robar Carta \n2 - Suministro \n3 - Comprobar Cartas de Mano \n4 - Investigar \n5 - Jugar Cartas \n7 Salir`)
 
                     if (incio == 1) {
                         robar_carta()
@@ -48,9 +48,11 @@ function pruebas_prompt() {
 
                     } else if (incio == 4) {
                         Investigar_Lugar_Estudio()
+                    } else if (incio == 5) {
+                        jugar_cartas()
                     }
                 } else if (ubicacion_pasillo == true) {
-                    var incio = prompt(`Turnos Restantes: ${acciones_jugador} \nLocalización: Pasillo \nEstas en tu turno, que quieres hacer? \n1 - Robar Carta \n2 - Suministro \n3 - Comprobar Cartas de Mano \n4 - Investigar \n5 - Moverte \n6 - Salir`)
+                    var incio = prompt(`Turnos Restantes: ${acciones_jugador} \nLocalización: Pasillo \nEstas en tu turno, que quieres hacer? \n1 - Robar Carta \n2 - Suministro \n3 - Comprobar Cartas de Mano \n4 - Investigar \n5-Jugar Cartas\n6 - Moverse\n7 Salir`)
 
                     if (incio == 1) {
                         robar_carta()
@@ -87,7 +89,7 @@ function pruebas_prompt() {
                         }
                     }
                 } else if (ubicacion_atico == true) {
-                    var incio = prompt(`Turnos Restantes: ${acciones_jugador} \nLocalización: Atico \nEstas en tu turno, que quieres hacer? \n1 - Robar Carta \n2 - Suministro \n3 - Comprobar Cartas de Mano \n4 - Investigar \n5 - Moverte \n6 - Salir`)
+                    var incio = prompt(`Turnos Restantes: ${acciones_jugador} \nLocalización: Atico \nEstas en tu turno, que quieres hacer? \n1 - Robar Carta \n2 - Suministro \n3 - Comprobar Cartas de Mano \n4 - Investigar \n5-Jugar Cartas\n6 - Moverse\n7 Salir`)
 
                     if (incio == 1) {
                         robar_carta()
@@ -109,7 +111,7 @@ function pruebas_prompt() {
                     } else if (incio == 4) {
                         console.log("Pistas Atico" + atico.pistas_investigador)
                         Investigar_Lugar_Atico()
-                    } else if (incio == 5) {
+                    } else if (incio == 6) {
                         moverse = prompt("Donde te quieres mover: pasillo")
                         if (moverse = "pasillo") {
                             ubicacion_atico = false
@@ -141,7 +143,7 @@ function pruebas_prompt() {
                     } else if (incio == 4) {
                         console.log("Pistas sotano" + sotano.pistas_investigador)
                         Investigar_Lugar_Sotano()
-                    } else if (incio == 5) {
+                    } else if (incio == 6) {
                         moverse = prompt("Donde te quieres mover: pasillo")
                         if (moverse = "pasillo") {
                             ubicacion_sotano = false

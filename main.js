@@ -4,6 +4,7 @@ function main() {
     datos_mazo_mitos()
     cartas_mano = []
     cartas_descartadas = []
+    cartas_mesa_jugador = []
     Datos_Cartas_Lugares_Descubiertos()
     // console.log(grupo_lugares_revelados)
     // Buscar_Carta_Lugar()
