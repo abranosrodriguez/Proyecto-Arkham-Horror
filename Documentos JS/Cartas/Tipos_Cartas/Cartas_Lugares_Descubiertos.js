@@ -12,4 +12,6 @@ class Cartas_Lugares_Revelados extends Cartas_Lugares {
         this.victoria = victoria;
         this.cantidad_victoria = cantidad_victoria;
     }
+
+
 }

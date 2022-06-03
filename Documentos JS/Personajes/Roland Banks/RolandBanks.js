@@ -13,4 +13,8 @@ class Roland_Banks extends Personajes {
         this.intelecto = this.intelecto + intelecto_carta
         return this.intelecto
     }
+    restar_Intelecto_prueba_Anterior(intelecto_carta) {
+        this.intelecto = this.intelecto - intelecto_carta
+        return this.intelecto
+    }
 }

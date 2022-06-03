@@ -20,18 +20,25 @@ function Investigar_Lugar() {
             for (i = 0; i < cartas_mano.length; i++) {
                 if (carta_usuario_usar == cartas_mano[i].nombre) {
                     carta_para_descartar = cartas_mano.indexOf(cartas_mano[i])
-
                     cartas_descartadas.push(cartas_mano[i])
+                    intelecto_carta = (cartas_mano[i].icono_intelecto)
+
+                    console.log("Intelecto: " + intelecto_carta)
+                    console.log("Intelecto antes: " + RolandBanks.intelecto)
+                    RolandBanks.sumar_Intelecto(intelecto_carta)
+                    console.log("Intelecto despues: " + RolandBanks.intelecto)
+                    Prueba_Intelecto()
+
                     console.log("Cartas Descartadas:")
                     console.log(cartas_descartadas)
                     console.log("                                   ")
                     console.log("Cartas Mano:")
-                    console.log(cartas_mano[i])
+                    console.log(cartas_mano)
 
                     if (carta_para_descartar > -1) {
                         cartas_mano.splice(carta_para_descartar, 1)
                     }
-                    // RolandBanks.sumar_Intelecto(cartas_mano[i].icono_intelecto)
+                    RolandBanks.restar_Intelecto_prueba_Anterior(intelecto_carta)
                 }
             }
 
