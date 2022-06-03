@@ -13,5 +13,8 @@ class Cartas_Lugares_Revelados extends Cartas_Lugares {
         this.cantidad_victoria = cantidad_victoria;
     }
 
-
+    restar_pistas_lugares(numero_de_pistas) {
+        this.pistas_investigador = this.pistas_investigador - numero_de_pistas
+        return this.pistas_investigador
+    }
 }

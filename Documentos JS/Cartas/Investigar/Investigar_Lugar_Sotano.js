@@ -1,18 +1,10 @@
-function Investigar_Lugar() {
-    // for (i = 0; i < grupo_lugares_revelados.length; i++) {
-    //     console.log(grupo_lugares_revelados[i])
+function Investigar_Lugar_Sotano() {
+    if (sotano.pistas_investigador != 0) {
 
-    // }
-    estudio = grupo_lugares_revelados[0]
-    pasillo = grupo_lugares_revelados[1]
-    atico = grupo_lugares_revelados[2]
-    sotano = grupo_lugares_revelados[3]
-    console.log(estudio)
-    ubicacion_pasillo = true
+        investigar = prompt(`Nombre del Lugar: ${sotano.nombre} \nNumero de pistas en el lugar: ${sotano.pistas_investigador} \nQuieres usar alguna carta para potenciarte? Si | No | Comprobar`)
 
-    if (ubicacion_pasillo == true) {
-        investigar = prompt(`Nombre del Lugar: ${estudio.nombre} \nNumero de pistas en el lugar: ${estudio.pistas_investigador} \nQuieres usar alguna carta para potenciarte? Si | No | Comprobar`)
         if (investigar == "no" || investigar == "no") {
+
             Prueba_Intelecto()
 
         } else if (investigar == "si" || investigar == "Si") {
@@ -22,23 +14,14 @@ function Investigar_Lugar() {
                     carta_para_descartar = cartas_mano.indexOf(cartas_mano[i])
                     cartas_descartadas.push(cartas_mano[i])
                     intelecto_carta = (cartas_mano[i].icono_intelecto)
-
-                    console.log("Intelecto: " + intelecto_carta)
-                    console.log("Intelecto antes: " + RolandBanks.intelecto)
                     RolandBanks.sumar_Intelecto(intelecto_carta)
-                    console.log("Intelecto despues: " + RolandBanks.intelecto)
                     Prueba_Intelecto()
-
-                    console.log("Cartas Descartadas:")
-                    console.log(cartas_descartadas)
-                    console.log("                                   ")
-                    console.log("Cartas Mano:")
-                    console.log(cartas_mano)
 
                     if (carta_para_descartar > -1) {
                         cartas_mano.splice(carta_para_descartar, 1)
                     }
                     RolandBanks.restar_Intelecto_prueba_Anterior(intelecto_carta)
+
                 }
             }
 
@@ -58,4 +41,3 @@ function Investigar_Lugar() {
         }
     }
 }
-//\nEl numero de pistal total: ${carta_lugar_revelado_estudio.pistas_investigador}

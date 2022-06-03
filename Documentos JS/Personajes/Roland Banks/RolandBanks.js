@@ -17,4 +17,19 @@ class Roland_Banks extends Personajes {
         this.intelecto = this.intelecto - intelecto_carta
         return this.intelecto
     }
+
+    sumar_Pistas() {
+        this.pistas = this.pistas + 1
+        return this.pistas
+    }
+
+    obligado_Sotano() {
+        this.vida = this.vida - 1
+        return this.vida
+    }
+
+    obligado_Atico() {
+        this.cordura = this.cordura - 1
+        return this.cordura
+    }
 }
