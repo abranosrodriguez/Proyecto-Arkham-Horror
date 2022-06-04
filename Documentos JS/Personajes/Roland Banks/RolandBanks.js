@@ -4,8 +4,8 @@ class Roland_Banks extends Personajes {
         return this.suministros
     }
 
-    restar_Suministros() {
-        this.suministros = this.suministros - 1
+    restar_Suministros(coste_carta) {
+        this.suministros = this.suministros - coste_carta
         return this.suministros
     }
 

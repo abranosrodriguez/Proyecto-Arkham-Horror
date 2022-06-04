@@ -74,7 +74,7 @@ function pruebas_prompt() {
                     } else if (incio == 4) {
                         console.log("Pistas pasillo" + pasillo.pistas_investigador)
                         Investigar_Lugar_Pasillo()
-                    } else if (incio == 5) {
+                    } else if (incio == 6) {
                         moverse = prompt("Donde te quieres mover: Sotano | Atico")
                         if (moverse == "sotano") {
                             ubicacion_pasillo = false
