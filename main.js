@@ -22,11 +22,11 @@ function main() {
 
     acciones_jugador(RolandBanks)
 
-    pruebas_prompt()
+    robar_cinco_cartas_turno_inicial()
+    //pruebas_prompt()
 
     //Nos permitirá robar la carta
     //robar_carta()
-
 
 }
 main()

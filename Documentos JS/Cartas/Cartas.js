@@ -1,5 +1,6 @@
 class Cartas {
-    constructor(coste, tipo_carta, nombre, tipo_clase, icono_voluntad, icono_intelecto, icono_combate, icono_agilidad, icono_comodin, rasgos, espacio, tipo_espacio, coste_espacio) {
+    constructor(imagen, coste, tipo_carta, nombre, tipo_clase, icono_voluntad, icono_intelecto, icono_combate, icono_agilidad, icono_comodin, rasgos, espacio, tipo_espacio, coste_espacio) {
+        this.imagen = imagen;
         this.coste = coste;
         this.tipo_carta = tipo_carta;
         this.nombre = nombre;

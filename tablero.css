@@ -87,3 +87,21 @@
     width: 15vh;
     height: auto;
 }
+
+/* Cartas mano jugador */
+#Tablero_Cartas_Jugador_Mano {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0.5rem;
+    margin: auto;
+
+
+}
+
+.Cartas_Mano {
+    margin: 0.3vh;
+    border-radius: 1vh;
+    width: auto;
+    height: 30vh;
+}
