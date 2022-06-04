@@ -87,6 +87,13 @@
 
             <div>
                 <img id="bolsa_fichas" src="Imagenes/Bolsa_Fichas/bolsa.jpg">
+                <div id="Debajo_bolsa">
+                    Dificultad: <a id="Dificultad"></a><br>
+                    Intelecto Personaje: <a id="Intelecto_Personaje"></a><br>
+                    Ficha: <a id="Ficha_Sacada"></a><br>
+                    Resultado: <a id="Resultado"><br>
+                </div>
+
             </div>
         </div>
 
@@ -98,6 +105,10 @@
                     <img class="zona_de_jugador_cartas"
                         src="Imagenes/Capitulo 1/Cartas_Traseras/encuentros_trasero_borde.png">
                     Suministros:<div id="Cuenta_Suministros"></div>
+                    <div><input type="button" value="Investigar" id="Investigar">
+                        <input type="button" value="Sin Potenciar" id="Sin_Potenciar">
+                    </div>
+                    Pistas: <a id="Pistas_Personaje"></a>
                 </div>
 
                 <div>
@@ -220,6 +231,8 @@
         <script src="Documentos JS/Cartas/Tipos_Cartas/Mazo_Cartas_Mitos.js"></script>
         <script src="Documentos JS/Cartas/robar_carta_mitos.js"></script>
 
+        <script src="Documentos JS/Mitos/historia_mitos.js"></script>
+
         <!-- Cartas Lugares -->
         <script src="Documentos JS/Cartas/Cartas_Lugares.js"></script>
         <script src="Documentos JS/Cartas/Tipos_Cartas/Cartas_Lugares_Descubiertos.js"></script>
@@ -248,6 +261,13 @@
         <!-- Jugar Cartas -->
         <script src="Documentos JS/Cartas/jugar_cartas.js"></script>
         <script src="Documentos JS/Cartas/anadir_carta_robada_graficamente.js"></script>
+
+        <!-- jq -->
+        <script src="Documentos JS/JQuery/actualizar_datos_bolsa_estudio.js"></script>
+        <script src="Documentos JS/JQuery/actualizar_dificultad_estudio.js"></script>
+
+        <!-- Final de turno -->
+        <script src="Documentos JS/Personajes/Roland Banks/turno_acabado.js"></script>
     </div>
 </body>
 <footer>

@@ -12,7 +12,22 @@ function main() {
 
     robar_cinco_cartas_turno_inicial()
     acciones_jugador = 3
+    ficha_mitos = 0
+
+    ubicacion_estudio = true
+    ubicacion_pasillo = false
+    ubicacion_atico = false
+    ubicacion_sotano = false
+
+    estudio = grupo_lugares_revelados[0]
+    pasillo = grupo_lugares_revelados[1]
+    atico = grupo_lugares_revelados[2]
+    sotano = grupo_lugares_revelados[3]
+
     $("#Cuenta_Suministros").html(RolandBanks.suministros)
+    $("#Pistas_Personaje").html(RolandBanks.pistas)
+    document.getElementById("Sin_Potenciar").style.visibility = 'hidden'
+
 
     // console.log(
     //     "Fase Investigacion" + "\n     3 Acciones" + "\nFase de Enemigo" + "\nFase de Mantenimiento" + "\nFase de Mitos"
@@ -24,7 +39,21 @@ function main() {
     //pruebas_prompt()
 
 
-    acciones_Jugador(acciones_jugador)
+
+
+    if (ubicacion_estudio == true) {
+        acciones_Jugador(acciones_jugador)
+        alert("Ubicacion estudio")
+    }
+    if (ubicacion_pasillo == true) {
+        alert("Ubicacion pasillo")
+    }
+    if (ubicacion_atico == true) {
+        alert("Ubicacion Atico")
+    }
+    if (ubicacion_sotano == true) {
+        alert("Ubicacion Sotano")
+    }
 
 }
 main()

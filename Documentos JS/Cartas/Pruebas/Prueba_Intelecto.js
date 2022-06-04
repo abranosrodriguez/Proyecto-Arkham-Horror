@@ -3,6 +3,7 @@ function Prueba_Intelecto() {
     resultado_prueba = (RolandBanks.intelecto - ficha)
 
 
+
     if (ubicacion_estudio == true) {
         console.log("Dificultad:" + estudio.dificultad)
         console.log("Intelecto: " + RolandBanks.intelecto)
@@ -18,10 +19,11 @@ function Prueba_Intelecto() {
             console.log(datos_estudio)
             console.log("Pistas:" + RolandBanks.pistas)
             acciones_jugador--
-
+            actualizar_datos_bolsa_jq_estudio()
         } else {
             alert("Pierdes")
             acciones_jugador--
+            actualizar_datos_bolsa_jq_estudio()
         }
     }
     if (ubicacion_pasillo == true) {
@@ -91,5 +93,5 @@ function Prueba_Intelecto() {
         }
     }
 
-
+    return ficha
 }
