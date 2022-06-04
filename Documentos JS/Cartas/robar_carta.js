@@ -7,4 +7,6 @@ function robar_carta() {
     console.log(carta_robada)
 
     carta_nueva_mano(carta_robada, mazo_cartas)
+
+    console.log(carta_robada)
 }

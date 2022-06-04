@@ -1,22 +1,22 @@
-function acciones_jugador(RolandBanks) {
-    // for (i = 0; i <= 4; i++) {
-    //     numero_aleatorio();
-    //     i++;
-    // }
+function acciones_Jugador(acciones_jugador) {
+    document.getElementById("suministros").addEventListener("click", () => {
+        if (acciones_jugador != 0) {
+            sumarSuministrosRoland()
+            acciones_jugador--
+        } else if (acciones_jugador == 0) {
+            alert("SinAcciones")
+        }
 
-    // function numero_aleatorio() {
-    //     numero_random = Math.floor(Math.random() * (3 - 1) + 1) //7
-    //     if (numero_random == 1) {
-    //         robar_carta()
-    //     } else if (numero_random == 2) {
-    //         sumarSuministrosRoland(RolandBanks)
-    //     }
-    // }
+    })
 
-    sumarSuministrosRoland(RolandBanks)
+    document.getElementById("zona_jugador_robar_carta").addEventListener("click", () => {
+        if (acciones_jugador != 0) {
+            robar_carta()
+            acciones_jugador--
+            anadir_carta_robada_graficamente()
+        } else if (acciones_jugador == 0) {
+            alert("Sin acciones")
+        }
+    })
 
-
-    // function robar_suministro() {
-    //     console.log("Robo Suministro")
-    // }
 }
