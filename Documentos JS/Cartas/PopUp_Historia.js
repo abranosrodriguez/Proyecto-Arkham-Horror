@@ -49,9 +49,9 @@ function PopUpHistoria() {
 
     // ------------------------------------------------------------------------------------------------------------------------
     //Temporizador para lanzar el pop Up
-    function temporizador_PopUp() {
-        popUp.style.display = "block";
-    }
+    // function temporizador_PopUp() {
+    //     popUp.style.display = "block";
+    // }
 
-    setTimeout(temporizador_PopUp, 3000)
+    // setTimeout(temporizador_PopUp, 3000)
 }

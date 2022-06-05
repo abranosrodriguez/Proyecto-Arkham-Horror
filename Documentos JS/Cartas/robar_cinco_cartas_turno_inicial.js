@@ -30,11 +30,15 @@ function robar_cinco_cartas_turno_inicial() {
 
         //Creamos la img
         var img = document.createElement("img")
+
         img.src = (cartas_mano[i].imagen)
         //Le añadimos la clase para el css
+
         img.classList.add("Cartas_Mano")
         //Lo juntamos
+        img.setAttribute("id", i)
         document.getElementsByClassName("Cartas")[i].appendChild(img)
+
 
 
     }
