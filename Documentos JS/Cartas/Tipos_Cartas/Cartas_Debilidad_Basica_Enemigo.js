@@ -1,6 +1,6 @@
 class Cartas_Debilidad_Basica_Enemigos extends Cartas_Debilidad_Basica {
-    constructor(tipo, nombre, tipo_debilidad, rasgos, dano_enemigo, vida_enemigo, velocidad_enemigo, dano_jugador, dano_cordura_jugador, presa, accion, accion_descripcion, obligado, obligado_descripcion, otra_caracteristica) {
-        super(tipo, nombre, tipo_debilidad, rasgos)
+    constructor(imagen, tipo, nombre, tipo_debilidad, rasgos, dano_enemigo, vida_enemigo, velocidad_enemigo, dano_jugador, dano_cordura_jugador, presa, accion, accion_descripcion, obligado, obligado_descripcion, otra_caracteristica) {
+        super(imagen, tipo, nombre, tipo_debilidad, rasgos)
         this.dano_enemigo = dano_enemigo;
         this.vida_enemigo = vida_enemigo;
         this.velocidad_enemigo = velocidad_enemigo;
