@@ -4,11 +4,14 @@ function turno_acabado() {
     sumarSuministrosRoland()
     console.log("aaaaaaaaaaaaaaaaaaaaaaaaaa")
     console.log(cartas_mano)
-
+    array_url = []
     while (cartas_mano.length >= 9) {
         eliminar_carta = prompt("Dame el nombre de una carta")
+        nombre_carta_id = eliminar_carta
         for (i = 0; i < cartas_mano.length; i++) {
+            enlace = cartas_mano[i].imagen
             if (eliminar_carta === cartas_mano[i].nombre) {
+
                 eliminar_carta = cartas_mano.indexOf(cartas_mano[i])
                 cartas_descartadas.push(cartas_mano[i])
                 if (eliminar_carta > -1) {
@@ -16,23 +19,8 @@ function turno_acabado() {
                     i--
                 }
 
-                // prueba = (cartas_mano[i].imagen)
-                // console.log("Link de la foto que escribimos")
-                // console.log(prueba)
-
-
-
-                // etiqueta = document.getElementsByClassName("Cartas_Mano")
-                // for (j = 0; j < etiqueta.length; j++) {
-                //     console.log("Etiqueta")
-                //     console.log(etiqueta[i].src)
-                //     if (etiqueta[i].src == prueba) {
-                //         console.log("Son el mismo link")
-                //     }
-                // }
-
-
-
+                carta_a_eliminar = document.getElementById(nombre_carta_id)
+                carta_a_eliminar.remove()
                 console.log("Tamaño mano")
                 console.log(cartas_mano.length)
 

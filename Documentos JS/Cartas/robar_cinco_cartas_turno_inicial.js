@@ -33,10 +33,12 @@ function robar_cinco_cartas_turno_inicial() {
 
         img.src = (cartas_mano[i].imagen)
         //Le añadimos la clase para el css
-
+        nombre_carta_id = (cartas_mano[i].nombre)
+        // console.log("--------------------------")
+        // console.log(nombre_carta_id)
         img.classList.add("Cartas_Mano")
         //Lo juntamos
-        img.setAttribute("id", i)
+        img.setAttribute("id", nombre_carta_id)
         document.getElementsByClassName("Cartas")[i].appendChild(img)
 
 
