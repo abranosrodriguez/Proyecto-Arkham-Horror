@@ -44,7 +44,8 @@
     cursor: pointer;
 }
 
-#texto_historia_popUp {
+#texto_historia_popUp,
+#texto_Parte_I_popUp {
     font-family: "Times New Roman", Times, serif;
     font-style: italic;
 }

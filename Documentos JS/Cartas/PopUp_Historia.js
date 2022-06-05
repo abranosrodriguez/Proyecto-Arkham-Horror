@@ -46,4 +46,12 @@ function PopUpHistoria() {
         popUp2.style.display = "none";
         popUp.style.display = "block";
     })
+
+    // ------------------------------------------------------------------------------------------------------------------------
+    //Temporizador para lanzar el pop Up
+    function temporizador_PopUp() {
+        popUp.style.display = "block";
+    }
+
+    setTimeout(temporizador_PopUp, 3000)
 }

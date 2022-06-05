@@ -1,5 +1,7 @@
 function main() {
+    //Pop Up
     PopUpHistoria()
+
     //Datos del mazo donde están las 3 clases de cartas: [ Apoyo | Evento | Habilidad ]
     datos_mazo()
     datos_mazo_mitos()
@@ -29,7 +31,6 @@ function main() {
     $("#Pistas_Personaje").html(RolandBanks.pistas)
     document.getElementById("Sin_Potenciar").style.visibility = 'hidden'
 
-
     // console.log(
     //     "Fase Investigacion" + "\n     3 Acciones" + "\nFase de Enemigo" + "\nFase de Mantenimiento" + "\nFase de Mitos"
     // )
@@ -44,7 +45,7 @@ function main() {
 
     if (ubicacion_estudio == true) {
         acciones_Jugador(acciones_jugador)
-        alert("Ubicacion estudio")
+        // alert("Ubicacion estudio")
     }
     if (ubicacion_pasillo == true) {
         alert("Ubicacion pasillo")
