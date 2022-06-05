@@ -1,7 +1,6 @@
 function main() {
     //Pop Up
     PopUpHistoria()
-
     //Datos del mazo donde están las 3 clases de cartas: [ Apoyo | Evento | Habilidad ]
     datos_mazo()
     datos_mazo_mitos()

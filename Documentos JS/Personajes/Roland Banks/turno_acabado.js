@@ -3,7 +3,9 @@ function turno_acabado() {
 
     while (cartas_mano.length >= 8) {
         eliminar_carta = prompt("Dame el nombre de una carta")
+
         nombre_carta_id = eliminar_carta
+        a = nombre_carta_id
         for (i = 0; i < cartas_mano.length; i++) {
             enlace = cartas_mano[i].imagen
             if (eliminar_carta === cartas_mano[i].nombre) {
@@ -23,11 +25,13 @@ function turno_acabado() {
             }
 
         }
+        //Mostramos graficamente la ultima carta del array de descartes
+        anadir_carta_descarte_graficamente()
     }
+    //Robamos carta
     robar_carta()
+    //Añadimos la carta graficamente al usuario
     anadir_carta_robada_graficamente()
+    //Sumamos los suministros correspondientes
     sumarSuministrosRoland()
-    console.log("aaaaaaaaaaaaaaaaaaaaaaaaaa")
-    console.log(cartas_mano)
-
 }
