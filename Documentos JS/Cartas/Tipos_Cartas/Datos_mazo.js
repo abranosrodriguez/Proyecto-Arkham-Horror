@@ -9,7 +9,7 @@ function datos_mazo() {
 
     mazo_debilidades(grupo_debilidades_traiciones_basicas, grupo_debilidades_enemigos_basicas)
     carta_debilidad = robar_carta_debilidad()
-    console.log(carta_debilidad)
+    // console.log(carta_debilidad)
 
     mazo(grupo_apoyo, grupo_evento, grupo_habilidad, carta_debilidad)
 }

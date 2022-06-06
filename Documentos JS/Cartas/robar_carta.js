@@ -4,9 +4,9 @@ function robar_carta() {
     }
     //Sacamos una carta aleatoria del mazo
     carta_robada = (mazo_cartas[numero_aleatorio])
-    console.log(carta_robada)
+    // console.log(carta_robada)
 
     carta_nueva_mano(carta_robada, mazo_cartas)
 
-    console.log(carta_robada)
+    // console.log(carta_robada)
 }

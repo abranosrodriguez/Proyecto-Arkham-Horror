@@ -1,4 +1,7 @@
 function main() {
+    //Traduccion de los nombres
+    console_log_nombres()
+
     //Pop Up
     PopUpHistoria()
     //Datos del mazo donde están las 3 clases de cartas: [ Apoyo | Evento | Habilidad ]
@@ -29,6 +32,7 @@ function main() {
     $("#Cuenta_Suministros").html(RolandBanks.suministros)
     $("#Pistas_Personaje").html(RolandBanks.pistas)
     document.getElementById("Sin_Potenciar").style.visibility = 'hidden'
+    document.getElementById("Potenciar").style.visibility = 'hidden'
 
     // console.log(
     //     "Fase Investigacion" + "\n     3 Acciones" + "\nFase de Enemigo" + "\nFase de Mantenimiento" + "\nFase de Mitos"

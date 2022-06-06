@@ -9,6 +9,6 @@ function sacar_ficha_facil() {
         numero_aleatorio_facil = Math.round(Math.random() * (i - 0))
     }
     ficha_sacada_facil = (fichas_facil[numero_aleatorio_facil])
-    console.log(ficha_sacada_facil)
+    // console.log(ficha_sacada_facil)
     return ficha_sacada_facil
 }

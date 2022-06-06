@@ -5,7 +5,7 @@ function anadir_carta_robada_graficamente() {
 
     var img = document.createElement("img")
     buscador = -1
-    console.log()
+    // console.log()
     img.src = (cartas_mano.at(buscador).imagen)
 
     img.classList.add("Cartas_Mano")

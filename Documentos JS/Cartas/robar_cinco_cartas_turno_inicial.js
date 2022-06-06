@@ -8,11 +8,11 @@ function robar_cinco_cartas_turno_inicial() {
 
         if (cartas_mano[i].tipo == "Traicion" || cartas_mano[i].tipo == "Debilidad Basica") {
             robar_carta()
-            console.log()
+            // console.log()
             volver_al_mazo = cartas_mano.indexOf(cartas_mano[i])
             mazo_cartas.push(cartas_mano[i])
 
-            console.log("Se robo carta de Debilidad o Traicion, volviendo al mazo")
+            // console.log("Se robo carta de Debilidad o Traicion, volviendo al mazo")
             // console.log(volver_al_mazo)
             if (volver_al_mazo > -1) {
                 cartas_mano.splice(volver_al_mazo, 1)

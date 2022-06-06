@@ -5,6 +5,6 @@ function Datos_Cartas_Lugares_Descubiertos() {
     var carta_lugar_revelado_sotano = new Cartas_Lugares_Revelados("Mas", "Sotano", "Descripcion", true, false, false, false, 4, 2, true, "Descripcion obli", false, "-", false, "-", true, 1)
     var carta_lugar_revelado_salita = new Cartas_Lugares_Revelados("Rombo", "Salita", "Descripcion", true, false, false, false, 2, 0, false, "-", true, "Descri desistir", true, "Descri negociar", false, 0)
     grupo_lugares_revelados = [carta_lugar_revelado_estudio, carta_lugar_revelado_pasillo, carta_lugar_revelado_atico, carta_lugar_revelado_sotano, carta_lugar_revelado_salita]
-    console.log(grupo_lugares_revelados)
+    // console.log(grupo_lugares_revelados)
     return grupo_lugares_revelados
 }

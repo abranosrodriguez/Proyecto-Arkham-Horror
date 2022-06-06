@@ -2,7 +2,7 @@ function turno_acabado() {
     array_url = []
 
     while (cartas_mano.length >= 8) {
-        eliminar_carta = prompt("Dame el nombre de una carta")
+        eliminar_carta = prompt("Maximo 8 cartas en la mano: \nDame el nombre de las cartas que quieras eliminar")
 
         nombre_carta_id = eliminar_carta
         a = nombre_carta_id
@@ -17,11 +17,7 @@ function turno_acabado() {
                     i--
                 }
 
-                carta_a_eliminar = document.getElementById(nombre_carta_id)
-                carta_a_eliminar.remove()
-                console.log("Tamaño mano")
-                console.log(cartas_mano.length)
-
+                eliminar_carta_graficamente(nombre_carta_id)
             }
 
         }
