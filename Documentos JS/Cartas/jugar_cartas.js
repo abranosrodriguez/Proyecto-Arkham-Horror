@@ -22,27 +22,26 @@ function jugar_cartas() {
         }
     } else {
         jugar_carta = prompt("Dame el nombre de una carta")
-
+        nombre_carta_id = jugar_carta
         for (i = 0; i < cartas_mano.length; i++) {
             // console.log(cartas_mano[i].nombre)
             datos_carta = cartas_mano[i]
             if (jugar_carta === cartas_mano[i].nombre) {
+
                 if (datos_carta.tipo_carta == "Apoyo") {
                     if (RolandBanks.suministros >= cartas_mano[i].coste) {
                         if (datos_carta.tipo_espacio == "Mano") {
                             RolandBanks.restar_Suministros(cartas_mano[i].coste)
-                            carta_a_jugar = cartas_mano.indexOf(datos_carta)
-                            cartas_mesa_jugador.push(datos_carta)
+                            jugar_carta = cartas_mano.indexOf(cartas_mano[i])
+                            cartas_mesa_jugador.push(cartas_mano[i])
 
-                            console.log("11111111111111111111111")
-                            console.log(datos_carta)
-                            if (carta_a_jugar > -1) {
-                                cartas_mano.splice(carta_a_jugar, 1)
+                            if (jugar_carta > -1) {
+                                cartas_mano.splice(jugar_carta, 1)
+                                i--
                             }
-                            console.log("0000000000000000000000")
-                            console.log(datos_carta.tipo_espacio)
+                            eliminar_carta_graficamente(nombre_carta_id)
                             añadir_graficamente_carta_a_la_mesa_apoyo()
-                            eliminar_carta_graficamente(jugar_carta)
+
                         }
                     }
 
