@@ -14,6 +14,7 @@ function acciones_Jugador(acciones_jugador) {
                 ubicacion_estudio == false
                 ubicacion_pasillo == true
                 setTimeout(() => { clearInterval(timerId); console.log("Tiempo Parado") })
+                PopUp_Acto_1b()
 
                 return [ubicacion_estudio = false, ubicacion_pasillo = true]
             }
