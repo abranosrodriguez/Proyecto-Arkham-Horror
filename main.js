@@ -3,7 +3,11 @@ function main() {
     console_log_nombres()
 
     //Pop Up
+
     PopUpHistoria()
+    PopUpPlan()
+    PopUpActo()
+
     //Datos del mazo donde están las 3 clases de cartas: [ Apoyo | Evento | Habilidad ]
     datos_mazo()
     datos_mazo_mitos()
@@ -19,10 +23,9 @@ function main() {
     acciones_jugador = 3
     ficha_mitos = 0
 
-    ubicacion_estudio = true
-    ubicacion_pasillo = false
-    ubicacion_atico = false
-    ubicacion_sotano = false
+    //Quitar despues
+    carta_estudio()
+
 
     estudio = grupo_lugares_revelados[0]
     pasillo = grupo_lugares_revelados[1]
@@ -44,21 +47,22 @@ function main() {
     //pruebas_prompt()
 
 
+    acciones_Jugador(acciones_jugador)
 
+    // if (ubicacion_estudio == true) {
 
-    if (ubicacion_estudio == true) {
-        acciones_Jugador(acciones_jugador)
-        // alert("Ubicacion estudio")
-    }
-    if (ubicacion_pasillo == true) {
-        alert("Ubicacion pasillo")
-    }
-    if (ubicacion_atico == true) {
-        alert("Ubicacion Atico")
-    }
-    if (ubicacion_sotano == true) {
-        alert("Ubicacion Sotano")
-    }
+    //     // alert("Ubicacion estudio")
+    // }
+    // if (ubicacion_pasillo == true) {
+    //     alert("Ubicacion pasillo")
+    //     acciones_Jugador(acciones_jugador)
+    // }
+    // if (ubicacion_atico == true) {
+    //     alert("Ubicacion Atico")
+    // }
+    // if (ubicacion_sotano == true) {
+    //     alert("Ubicacion Sotano")
+    // }
 
 }
 main()

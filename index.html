@@ -2,7 +2,9 @@
 <html>
 <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 <link href="tablero.css" rel="stylesheet" type="text/css">
-<link href="PopUp_Historia.css" rel="stylesheet" type="text/css">
+<link href="Documentos JS/Cartas/Model Box - Pop Up/PopUp_Historia.css" rel="stylesheet" type="text/css">
+<link href="Documentos JS/Cartas/Model Box - Pop Up/PopUp_Plan.css" rel="stylesheet" type="text/css">
+<link href="Documentos JS/Cartas/Model Box - Pop Up/PopUp_Acto.css" rel="stylesheet" type="text/css">
 <meta charset="UTF-8">
 <header>
     <div id="banner">
@@ -14,6 +16,7 @@
 <body>
     <!--Tablero-->
     <div>
+        <!-- Model Box -->
         <button id="Boton_PopUp">Historia</button>
         <div id="myPopUp" class="PopUp">
             <div class="PopUp_Cotenido">
@@ -53,6 +56,35 @@
                 <span id="Anterior1">Anterior</span>
             </div>
         </div>
+
+        <button id="Boton_Historia_Plan">Historia Plan</button>
+        <div id="myHistoria_plan" class="PopUp_historia_plan">
+            <div class="PopUp_Plan_Contenido">
+                <span class="Close_Plan">&times;</span>
+                <h5>Plan 1a</h5>
+                <h3>¡¿Qué está pasando?!</h3>
+                <p id="texto_historia_plan_1">La noche está muy avanzada. Estáis metidos en tu estudio, investigando las
+                    sangrientas desapariciones que han estado teniendo lugar de la región.
+                    Tras varias horas de investigación, oís un extraño cántico proveniente de la salita que hay al final
+                    del pasillo. Al mismo tiempo, se oye un movimiento de tierra, como si algo
+                    estuviera cavando bajo el suelo
+                </p>
+            </div>
+        </div>
+
+        <button id="Boton_Historia_Acto">Historia Acto</button>
+        <div id="myActo_plan" class="PopUp_acto_plan">
+            <div class="PopUp_Acto_Contenido">
+                <span class="Close_Acto">&times;</span>
+                <h5>Acto 1a</h5>
+                <h3>Atrapados</h3>
+                <p id="texto_historia_acto_1">Cuando vais a poneros en accion para investigar, la puerta del estudio se
+                    desvanece ante vuestro ojos, dejando una pared sólidaa.
+                    Estais atrapados en el estudio hasta que podáis encontrar otra forma de salir
+                </p>
+            </div>
+        </div>
+        <!-- --------------------- -->
         <!--Zona de encuentros-->
         <div class="zona_de_encuentros">
             <div>
@@ -239,7 +271,9 @@
             </div>
         </div>
 
-        <script src="Documentos JS/Cartas/PopUp_Historia.js"></script>
+        <script src="Documentos JS/Cartas/Model Box - Pop Up/PopUp_Historia.js"></script>
+        <script src="Documentos JS/Cartas/Model Box - Pop Up/PopUp_Plan.js"></script>
+        <script src="Documentos JS/Cartas/Model Box - Pop Up/PopUp_Acto.js"></script>
 
         <!-- Personaje  -->
         <script src="Documentos JS/Personajes/Personajes.js"></script>
@@ -307,6 +341,9 @@
         <script src="Documentos JS/Cartas/anadir_carta_robada_graficamente.js"></script>
         <script src="Documentos JS/Cartas/añadir_carta_descarte_graficamente.js"></script>
         <script src="Documentos JS/Cartas/eliminar_carta_graficamente.js"></script>
+
+        <!-- Cambiar la carta de estudio -->
+        <script src="Documentos JS/Mitos/carta_estudio.js"></script>
 
         <!-- jq -->
         <script src="Documentos JS/JQuery/actualizar_datos_bolsa_estudio.js"></script>

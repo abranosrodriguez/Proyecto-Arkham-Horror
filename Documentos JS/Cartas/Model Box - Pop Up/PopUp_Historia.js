@@ -12,12 +12,14 @@ function PopUpHistoria() {
     // When the user clicks on <span> (x), close the modal
     spanPopUp.addEventListener("click", () => {
         popUp.style.display = "none";
+        carta_estudio()
     })
 
     // When the user clicks anywhere outside of the modal, close it
     window.addEventListener("click", (event) => {
         if (event.target == popUp) {
             popUp.style.display = "none";
+            carta_estudio()
         }
     })
 
@@ -34,11 +36,13 @@ function PopUpHistoria() {
 
     spanPopUp2.addEventListener("click", () => {
         popUp2.style.display = "none";
+        carta_estudio()
     })
 
     window.addEventListener("click", (event) => {
         if (event.target == popUp2) {
             popUp2.style.display = "none";
+            carta_estudio()
         }
     })
 
