@@ -26,6 +26,10 @@ function main() {
     //Quitar despues
     carta_estudio()
 
+    //Seccion de mano
+    mano_1 = true
+    mano_2 = false
+    mano_3 = false
 
     estudio = grupo_lugares_revelados[0]
     pasillo = grupo_lugares_revelados[1]

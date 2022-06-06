@@ -16,6 +16,9 @@ function acciones_Jugador(acciones_jugador) {
                 setTimeout(() => { clearInterval(timerId); console.log("Tiempo Parado") })
                 PopUp_Acto_1b()
 
+                RolandBanks.pistas = 0
+                $("#Pistas_Personaje").html(RolandBanks.pistas)
+
                 return [ubicacion_estudio = false, ubicacion_pasillo = true]
             }
 
@@ -26,13 +29,14 @@ function acciones_Jugador(acciones_jugador) {
         timerId = setTimeout(tick, 2000); // (*)
     }, 2000);
 
-
+    // -------------------------------------------------------------------------------------------------
     //Suministros Jugador
 
     document.getElementById("suministros").addEventListener("click", () => {
         if (acciones_jugador != 0) {
             sumarSuministrosRoland()
             acciones_jugador--
+            console.log(acciones_jugador)
         } else if (acciones_jugador == 0) {
             alert("Sin Acciones")
             acciones_jugador = 3
@@ -50,6 +54,21 @@ function acciones_Jugador(acciones_jugador) {
             robar_carta()
             acciones_jugador--
             anadir_carta_robada_graficamente()
+        } else if (acciones_jugador == 0) {
+            alert("Sin acciones")
+            acciones_jugador = 3
+            ficha_mitos++
+
+            turno_acabado()
+        }
+    })
+
+    // -------------------------------------------------------------------------------------------------
+    // Jugar Carta
+    document.getElementById("Jugar_Cartas").addEventListener("click", () => {
+        if (acciones_jugador != 0) {
+            jugar_cartas()
+            acciones_jugador--
         } else if (acciones_jugador == 0) {
             alert("Sin acciones")
             acciones_jugador = 3

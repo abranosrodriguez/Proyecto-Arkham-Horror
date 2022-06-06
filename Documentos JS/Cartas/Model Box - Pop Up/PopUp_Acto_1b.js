@@ -57,12 +57,14 @@ function PopUp_Acto_1b() {
         var spanActo_2a = document.getElementsByClassName("Close_Acto2a")[0];
         spanActo_2a.addEventListener("click", () => {
             PopUp_Acto_2a.style.display = "none";
+            añadir_graficamente_pasillo_sotano_atico()
         })
 
         //Acto A2 cuando presione fuera de la ventana se cierra
         window.addEventListener("click", (event) => {
             if (event.target == PopUp_Acto_2a) {
                 PopUp_Acto_2a.style.display = "none";
+                añadir_graficamente_pasillo_sotano_atico()
             }
         })
     }

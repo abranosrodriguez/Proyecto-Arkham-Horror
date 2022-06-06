@@ -117,9 +117,13 @@
                 <span class="Close_Acto2a">&times;</span>
                 <h4>Acto 2a</h4>
                 <h3>La barrera</h3>
-                <p id="texto_historia_acto_2a">a
+                <p id="texto_historia_acto_2a">Una brillante barrera os bloquea el paso hacia la salita. Al acercaros,
+                    un intenso calor os obliga a retroceder.
+                    Cógeis algo de tierra y la lanzáis contra la barrera, donnde para vuestro horror queda totalmente
+                    incinerada. Puede que en el sotano o el ático haya algo que os sirva de ayuda
                 </p>
-                <p id="Indicaciones_acto_2a">b</p>
+                <p id="Indicaciones_acto_2a">Obligado - Cuando acabe la ronda, los investigadores que estén en el
+                    Pasillo pueden, como grupo, gastar la cantidad necesaria de pistas para hacer avanzar el acto</p>
                 <span id="Anterior_acto_1b">Anterior</span>
             </div>
         </div>
@@ -221,7 +225,10 @@
                             value="Potenciar" id="Potenciar">
                     </div>
                     Pistas: <a id="Pistas_Personaje"></a>
+                    <br>
+                    <input type="button" value="Jugar Cartas" id="Jugar_Cartas">
                 </div>
+
 
                 <div>
                     <img class="zona_de_jugador_cartas" id="zona_jugador_robar_carta"
@@ -271,11 +278,11 @@
                 <!-- 2 Espacios Manos-->
                 <div>
                     <div>
-                        <img class="zona_de_jugador_cartas"
+                        <img class="zona_de_jugador_cartas" id="Mano 1"
                             src="Imagenes/Capitulo 1/Cartas_Traseras/encuentros_trasero_borde.png">
                     </div>
                     <div>
-                        <img class="zona_de_jugador_cartas"
+                        <img class="zona_de_jugador_cartas" id="Mano 2"
                             src="Imagenes/Capitulo 1/Cartas_Traseras/encuentros_trasero_borde.png">
                     </div>
                 </div>
@@ -382,6 +389,7 @@
         <script src="Documentos JS/Cartas/añadir_carta_descarte_graficamente.js"></script>
         <script src="Documentos JS/Cartas/eliminar_carta_graficamente.js"></script>
         <script src="Documentos JS/Mitos/añadir_graficamente_pasillo_sotano_atico.js"></script>
+        <script src="Documentos JS/Cartas/añadir_carta_a_la_mesa_graficamente.js"></script>
 
         <!-- Cambiar la carta de estudio -->
         <script src="Documentos JS/Mitos/carta_estudio.js"></script>
