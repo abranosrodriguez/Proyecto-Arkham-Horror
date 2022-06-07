@@ -16,6 +16,7 @@ function anadir_carta_robada_graficamente() {
         // console.log("--------------------------")
         // console.log(nombre_carta_id)
         img.setAttribute("id", nombre_carta_id)
+        newDiv.setAttribute("id", nombre_carta_id)
         document.getElementsByClassName("Cartas")[i].appendChild(img)
     }
 }

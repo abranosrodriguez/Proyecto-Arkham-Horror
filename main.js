@@ -45,32 +45,15 @@ function main() {
     document.getElementById("Potenciar").style.visibility = 'hidden'
     document.getElementById("Moverse").style.visibility = 'hidden'
 
-    // console.log(
-    //     "Fase Investigacion" + "\n     3 Acciones" + "\nFase de Enemigo" + "\nFase de Mantenimiento" + "\nFase de Mitos"
-    // )
-    // console.log(RolandBanks)
 
-
-
+    fase_1 = true
+    fase_2 = false
+    fase_3 = false
+    historia_mitos()
     //pruebas_prompt()
 
 
     acciones_Jugador(acciones_jugador)
-
-    // if (ubicacion_estudio == true) {
-
-    //     // alert("Ubicacion estudio")
-    // }
-    // if (ubicacion_pasillo == true) {
-    //     alert("Ubicacion pasillo")
-    //     acciones_Jugador(acciones_jugador)
-    // }
-    // if (ubicacion_atico == true) {
-    //     alert("Ubicacion Atico")
-    // }
-    // if (ubicacion_sotano == true) {
-    //     alert("Ubicacion Sotano")
-    // }
 
 }
 main()

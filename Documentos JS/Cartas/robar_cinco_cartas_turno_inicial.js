@@ -39,6 +39,7 @@ function robar_cinco_cartas_turno_inicial() {
         img.classList.add("Cartas_Mano")
         //Lo juntamos
         img.setAttribute("id", nombre_carta_id)
+        newDiv.setAttribute("id", nombre_carta_id)
         document.getElementsByClassName("Cartas")[i].appendChild(img)
 
 

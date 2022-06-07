@@ -24,8 +24,9 @@ function Investigar_Lugar_Estudio() {
                     }
                     RolandBanks.restar_Intelecto_prueba_Anterior(intelecto_carta)
 
-                    anadir_carta_descarte_graficamente()
+
                     eliminar_carta_graficamente(nombre_carta_id)
+                    anadir_carta_descarte_graficamente()
                     document.getElementById("Sin_Potenciar").style.visibility = 'hidden'
                     document.getElementById("Potenciar").style.visibility = 'hidden'
 

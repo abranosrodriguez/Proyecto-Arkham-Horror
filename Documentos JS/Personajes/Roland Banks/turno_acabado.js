@@ -18,11 +18,12 @@ function turno_acabado() {
                 }
 
                 eliminar_carta_graficamente(nombre_carta_id)
+                anadir_carta_descarte_graficamente()
             }
 
         }
         //Mostramos graficamente la ultima carta del array de descartes
-        anadir_carta_descarte_graficamente()
+
     }
     //Robamos carta
     robar_carta()
