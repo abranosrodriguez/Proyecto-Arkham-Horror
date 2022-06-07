@@ -9,7 +9,7 @@ function PopUp_Plan_1b() {
 
     spanPlan_1b.addEventListener("click", () => {
         popUp_plan_1b.style.display = "none";
-
+        prueba_plan_1b()
     })
 
     // When the user clicks anywhere outside of the modal, close it
@@ -17,6 +17,7 @@ function PopUp_Plan_1b() {
         if (event.target == popUp_plan_1b) {
             popUp_plan_1b.style.display = "none";
             actualizar_carta_plan_2a()
+            prueba_plan_1b()
         }
     })
 
@@ -60,6 +61,7 @@ function PopUp_Plan_1b() {
     spanPlan_2a.addEventListener("click", () => {
         PopUp_Plan_2a.style.display = "none";
         actualizar_carta_plan_2a()
+        prueba_plan_1b()
     })
 
     //Plan A2 cuando presione fuera de la ventana se cierra
@@ -67,6 +69,7 @@ function PopUp_Plan_1b() {
         if (event.target == PopUp_Plan_2a) {
             PopUp_Plan_2a.style.display = "none";
             actualizar_carta_plan_2a()
+            prueba_plan_1b()
         }
     })
 }

@@ -32,4 +32,10 @@ class Roland_Banks extends Personajes {
         this.cordura = this.cordura - 1
         return this.cordura
     }
+
+    dano_Horror(cantidad) {
+        this.cordura = this.cordura - cantidad
+        return this.cordura
+    }
+
 }
