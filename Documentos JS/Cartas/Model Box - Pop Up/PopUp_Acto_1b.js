@@ -67,6 +67,7 @@ function PopUp_Acto_1b() {
                 añadir_graficamente_pasillo_sotano_atico()
             }
         })
+
     }
     setTimeout(temporizador_Acto_1b, 2000)
 }

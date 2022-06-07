@@ -12,6 +12,8 @@ function añadir_graficamente_pasillo_sotano_atico() {
 
         acto_1a = document.getElementById("imagen_historia_acto")
         acto_1a.src = ("Imagenes/Capitulo 1/Acto/encuentro_2.jpg")
+        document.getElementById("Moverse").style.visibility = 'visible'
+        carta_pasillo()
     }
 
     setTimeout(cartas_pasillo_sotano_atico, 3000)

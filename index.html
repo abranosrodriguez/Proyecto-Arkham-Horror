@@ -171,15 +171,15 @@
 
                 <div class="lugares">
 
-                    <div id="lugar_4">
-                        <img class="lugares_cartas"
+                    <div>
+                        <img class="lugares_cartas" id="lugar_4"
                             src="Imagenes/Capitulo 1/Cartas_Traseras/encuentros_trasero_borde.png">
                     </div>
-                    <div id="lugar_5">
-                        <img class="lugares_cartas" src="Imagenes/Capitulo 1/Escenario/1_escenario.png">
+                    <div>
+                        <img class="lugares_cartas" id="lugar_5" src="Imagenes/Capitulo 1/Escenario/1_escenario.png">
                     </div>
-                    <div id="lugar_6">
-                        <img class="lugares_cartas"
+                    <div>
+                        <img class="lugares_cartas" id="lugar_6"
                             src="Imagenes/Capitulo 1/Cartas_Traseras/encuentros_trasero_borde.png">
                     </div>
                 </div>
@@ -224,9 +224,12 @@
                         <input type="button" value="Sin Potenciar" id="Sin_Potenciar"> <input type="button"
                             value="Potenciar" id="Potenciar">
                     </div>
-                    Pistas: <a id="Pistas_Personaje"></a>
+                    Pistas: <a id="Pistas_Personaje"></a><br>
+                    Vida: <a id="Vida_Personaje"></a><br>
+                    Cordura: <a id="Cordura_Personaje"></a>
                     <br>
                     <input type="button" value="Jugar Cartas" id="Jugar_Cartas">
+                    <input type="button" value="Moverse" id="Moverse">
                 </div>
 
 
@@ -380,6 +383,7 @@
         <script src="Documentos JS/Cartas/Investigar/Investigar_Lugar_Pasillo.js"></script>
         <script src="Documentos JS/Cartas/Investigar/Investigar_Lugar_Atico.js"></script>
         <script src="Documentos JS/Cartas/Investigar/Investigar_Lugar_Sotano.js"></script>
+        <script src="Documentos JS/Cartas/Investigar/Moverse.js"></script>
 
         <!-- Jugar Cartas -->
         <script src="Documentos JS/Cartas/jugar_cartas.js"></script>
@@ -393,10 +397,15 @@
 
         <!-- Cambiar la carta de estudio -->
         <script src="Documentos JS/Mitos/carta_estudio.js"></script>
+        <script src="Documentos JS/Mitos/carta_pasillo.js"></script>
 
         <!-- jq -->
         <script src="Documentos JS/JQuery/actualizar_datos_bolsa_estudio.js"></script>
         <script src="Documentos JS/JQuery/actualizar_dificultad_estudio.js"></script>
+        <script src="Documentos JS/JQuery/actualizar_datos_bolsa_jq_atico.js"></script>
+        <script src="Documentos JS/JQuery/actualizar_datos_sala_atico.js"></script>
+        <script src="Documentos JS/JQuery/actualizar_datos_bolsa_jq_sotano.js"></script>
+        <script src="Documentos JS/JQuery/actualizar_datos_sala_sotano.js"></script>
 
         <!-- Final de turno -->
         <script src="Documentos JS/Personajes/Roland Banks/turno_acabado.js"></script>

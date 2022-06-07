@@ -34,10 +34,21 @@ function jugar_cartas() {
                             RolandBanks.restar_Suministros(cartas_mano[i].coste)
                             jugar_carta = cartas_mano.indexOf(cartas_mano[i])
                             cartas_mesa_jugador.push(cartas_mano[i])
-
+                            // console.log("aaaaaa")
+                            // console.log(datos_carta)
                             if (jugar_carta > -1) {
                                 cartas_mano.splice(jugar_carta, 1)
                                 i--
+                                // for (j = 0; j < cartas_mesa_jugador.length; j++) {
+                                //     console.log(cartas_mesa_jugador[j])
+                                //     if (mano_1 == true) {
+                                //         if (jugar_carta > -1) {
+                                //             cartas_mesa_jugador.splice(jugar_carta, 1)
+                                //         }
+                                //     } else if (mano_2 == true) {
+
+                                //     }
+                                // }
                             }
                             eliminar_carta_graficamente(nombre_carta_id)
                             añadir_graficamente_carta_a_la_mesa_apoyo()

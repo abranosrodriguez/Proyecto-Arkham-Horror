@@ -38,8 +38,11 @@ function main() {
 
     $("#Cuenta_Suministros").html(RolandBanks.suministros)
     $("#Pistas_Personaje").html(RolandBanks.pistas)
+    $("#Vida_Personaje").html(RolandBanks.vida)
+    $("#Cordura_Personaje").html(RolandBanks.cordura)
     document.getElementById("Sin_Potenciar").style.visibility = 'hidden'
     document.getElementById("Potenciar").style.visibility = 'hidden'
+    document.getElementById("Moverse").style.visibility = 'hidden'
 
     // console.log(
     //     "Fase Investigacion" + "\n     3 Acciones" + "\nFase de Enemigo" + "\nFase de Mantenimiento" + "\nFase de Mitos"
