@@ -4,9 +4,12 @@
 <link href="tablero.css" rel="stylesheet" type="text/css">
 <link href="Documentos JS/Cartas/Model Box - Pop Up/PopUp_Historia.css" rel="stylesheet" type="text/css">
 <link href="Documentos JS/Cartas/Model Box - Pop Up/PopUp_Plan.css" rel="stylesheet" type="text/css">
+<link href="Documentos JS/Cartas/Model Box - Pop Up/PopUp_Plan_1b.css" rel="stylesheet" type="text/css">
+<link href="Documentos JS/Cartas/Model Box - Pop Up/PopUp_Plan_2a.css" rel="stylesheet" type="text/css">
 <link href="Documentos JS/Cartas/Model Box - Pop Up/PopUp_Acto.css" rel="stylesheet" type="text/css">
 <link href="Documentos JS/Cartas/Model Box - Pop Up/PopUp_Acto_1b.css" rel="stylesheet" type="text/css">
 <link href="Documentos JS/Cartas/Model Box - Pop Up/PopUp_Acto_2a.css" rel="stylesheet" type="text/css">
+
 <link href="ampliacion_cartas.css" rel="stylesheet" type="text/css">
 <meta charset="UTF-8">
 <header>
@@ -72,9 +75,43 @@
                     del pasillo. Al mismo tiempo, se oye un movimiento de tierra, como si algo
                     estuviera cavando bajo el suelo
                 </p>
+                <span id="Siguiente_Plan_1b">Siguiente</span>
+            </div>
+        </div>
+        <div id="myPlan_1b" class="PopUp_plan_1b">
+            <div class="PopUp_Plan_Contenido_1b">
+                <span class="Close_Plan1b">&times;</span>
+                <h4>Plan 1b</h4>
+                <h3>Un lapso del tiempo</h3>
+                <p id="texto_historia_plan_1b">Tu casa sigue cambiando ante tus ojos. Las paredes se descomponen, y el
+                    suelo de muchas habitaciones se ha
+                    convertido en tierra. En casi como si os hubieran transportado a un lugar totalmente distinto,
+                    aunque aquí y allí reconoceis elementos de tu antiagua casa
+                </p>
+                <p id="Indicaciones_plan_1b">El investigador jefe debe decidir (elige una opcion) <br>
+                    Cada investigador descarta 1 carta al azar de su mano o el investigador jefe recibe 2 puntos de
+                    horror</p>
+                <span id="Anterior_plan_1a">Anterior</span>
+                <span id="Siguiente_plan_2a">Siguiente</span>
             </div>
         </div>
 
+        <div id="myPlan_2a" class="PopUp_plan_2a">
+            <div class="PopUp_Plan_Contenido_2a">
+                <span class="Close_Plan2a">&times;</span>
+                <h4>Plan 2a</h4>
+                <h3>El ascenso de los gles</h3>
+                <p id="texto_historia_plan_2a">El suelo cede ajo vuestros pies, y veis a una vasta red de túneles que se
+                    extiene en la oscuridad del subsuelo.
+                    Hay formas y siluetas de extrañas criaturas que se mueven velozmente por los corredores, tratando de
+                    encontrar la forma de subir. Es probable
+                    que no queráis estar aquí cuando lo hagan
+                </p>
+                <span id="Anterior_plan_1b">Anterior</span>
+            </div>
+        </div>
+
+        <!-- Actooo -->
         <button id="Boton_Historia_Acto">Historia Acto</button>
         <div id="myActo_plan" class="PopUp_acto_plan">
             <div class="PopUp_Acto_Contenido">
@@ -324,8 +361,10 @@
 
         <script src="Documentos JS/Cartas/Model Box - Pop Up/PopUp_Historia.js"></script>
         <script src="Documentos JS/Cartas/Model Box - Pop Up/PopUp_Plan.js"></script>
+        <script src="Documentos JS/Cartas/Model Box - Pop Up/PopUp_Plan_1b.js"></script>
         <script src="Documentos JS/Cartas/Model Box - Pop Up/PopUp_Acto.js"></script>
         <script src="Documentos JS/Cartas/Model Box - Pop Up/PopUp_Acto_1b.js"></script>
+
 
         <!-- Personaje  -->
         <script src="Documentos JS/Personajes/Personajes.js"></script>
@@ -396,6 +435,7 @@
         <script src="Documentos JS/Cartas/eliminar_carta_graficamente.js"></script>
         <script src="Documentos JS/Mitos/añadir_graficamente_pasillo_sotano_atico.js"></script>
         <script src="Documentos JS/Cartas/añadir_carta_a_la_mesa_graficamente.js"></script>
+        <script src="Documentos JS/Mitos/actualizar_carta_plan_2a.js"></script>
 
         <!-- Cambiar la carta de estudio -->
         <script src="Documentos JS/Mitos/carta_estudio.js"></script>
