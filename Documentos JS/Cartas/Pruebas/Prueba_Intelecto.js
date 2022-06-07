@@ -20,10 +20,12 @@ function Prueba_Intelecto() {
             console.log("Pistas:" + RolandBanks.pistas)
             acciones_jugador--
             actualizar_datos_bolsa_jq_estudio()
+            actualizar_dificultad_estudio()
         } else {
             alert("Pierdes")
             acciones_jugador--
             actualizar_datos_bolsa_jq_estudio()
+            actualizar_dificultad_estudio()
         }
     }
     if (ubicacion_pasillo == true) {
@@ -66,11 +68,13 @@ function Prueba_Intelecto() {
             console.log("Pistas Personaje:" + RolandBanks.pistas)
             acciones_jugador--
             actualizar_datos_bolsa_jq_atico()
+            actualizar_datos_sala_atico()
 
         } else {
             alert("Pierdes")
             acciones_jugador--
             actualizar_datos_bolsa_jq_atico()
+            actualizar_datos_sala_atico()
         }
 
     }
@@ -91,11 +95,13 @@ function Prueba_Intelecto() {
             console.log("Pistas:" + RolandBanks.pistas)
             acciones_jugador--
             actualizar_datos_bolsa_jq_estudio()
+            actualizar_datos_sala_sotano()
 
         } else {
             alert("Pierdes")
             acciones_jugador--
             actualizar_datos_bolsa_jq_estudio()
+            actualizar_datos_sala_sotano()
         }
     }
 

@@ -1,4 +1,5 @@
 function main() {
+    cambio_imagen_roland()
     //Traduccion de los nombres
     console_log_nombres()
 

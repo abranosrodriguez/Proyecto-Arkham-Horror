@@ -3,6 +3,7 @@ function carta_estudio() {
         clase_carta = document.getElementsByClassName("lugares_cartas")
         //console.log(clase_carta[4])
         clase_carta[4].src = ("Imagenes/Capitulo 1/Escenario/1_escenario_trasero.png")
+        actualizar_dificultad_estudio()
     }
 
     setTimeout(carta_imagen_estudio, 3000)

@@ -7,6 +7,7 @@
 <link href="Documentos JS/Cartas/Model Box - Pop Up/PopUp_Acto.css" rel="stylesheet" type="text/css">
 <link href="Documentos JS/Cartas/Model Box - Pop Up/PopUp_Acto_1b.css" rel="stylesheet" type="text/css">
 <link href="Documentos JS/Cartas/Model Box - Pop Up/PopUp_Acto_2a.css" rel="stylesheet" type="text/css">
+<link href="ampliacion_cartas.css" rel="stylesheet" type="text/css">
 <meta charset="UTF-8">
 <header>
     <div id="banner">
@@ -140,7 +141,7 @@
                 <img class="mazo_encuentros" src="Imagenes/Capitulo 1/Escenario_Bolsa/encuentro_bolsa_facil_normal.jpg">
             </div>
             <div>
-                <img class="mazo_actos" src="Imagenes/Capitulo 1/Plan/encuentro_1.jpg">
+                <img class="mazo_actos" src="Imagenes/Capitulo 1/Plan/encuentro_1.jpg" id="imagen_historia_plan">
             </div>
             <div>
                 <img class="mazo_actos" src="Imagenes/Capitulo 1/Acto/encuentro_1.jpg" id="imagen_historia_acto">
@@ -155,15 +156,15 @@
             </div>
             <div>
                 <div class="lugares">
-                    <div id="lugar_1">
-                        <img class="lugares_cartas"
+                    <div>
+                        <img class="lugares_cartas" id="lugar_1"
                             src="Imagenes/Capitulo 1/Cartas_Traseras/encuentros_trasero_borde.png">
                     </div>
-                    <div id="lugar_2">
-                        <img class="lugares_cartas"
+                    <div>
+                        <img class="lugares_cartas" id="lugar_2"
                             src="Imagenes/Capitulo 1/Cartas_Traseras/encuentros_trasero_borde.png">
                     </div>
-                    <div id="lugar_3">
+                    <div>
                         <img class="lugares_cartas"
                             src="Imagenes/Capitulo 1/Cartas_Traseras/encuentros_trasero_borde.png">
                     </div>
@@ -172,7 +173,7 @@
                 <div class="lugares">
 
                     <div>
-                        <img class="lugares_cartas" id="lugar_4"
+                        <img class="lugares_cartas" id="lugar_4" id="lugar_3"
                             src="Imagenes/Capitulo 1/Cartas_Traseras/encuentros_trasero_borde.png">
                     </div>
                     <div>
@@ -185,16 +186,16 @@
                 </div>
 
                 <div class="lugares">
-                    <div id="lugar_7">
-                        <img class="lugares_cartas"
+                    <div>
+                        <img class="lugares_cartas" id="lugar_7"
                             src="Imagenes/Capitulo 1/Cartas_Traseras/encuentros_trasero_borde.png">
                     </div>
-                    <div id="lugar_8">
-                        <img class="lugares_cartas"
+                    <div>
+                        <img class="lugares_cartas" id="lugar_8"
                             src="Imagenes/Capitulo 1/Cartas_Traseras/encuentros_trasero_borde.png">
                     </div>
-                    <div id="lugar_9">
-                        <img class="lugares_cartas"
+                    <div>
+                        <img class="lugares_cartas" id="lugar_9"
                             src="Imagenes/Capitulo 1/Cartas_Traseras/encuentros_trasero_borde.png">
                     </div>
                 </div>
@@ -203,6 +204,7 @@
             <div>
                 <img id="bolsa_fichas" src="Imagenes/Bolsa_Fichas/bolsa.jpg">
                 <div id="Debajo_bolsa">
+                    Pistas Restantes: <a id="Pistas_Restantes"></a><br>
                     Dificultad: <a id="Dificultad"></a><br>
                     Intelecto Personaje: <a id="Intelecto_Personaje"></a><br>
                     Ficha: <a id="Ficha_Sacada"></a><br>
@@ -238,8 +240,8 @@
                         src="Imagenes/Capitulo 1/Cartas_Traseras/carta_trasero.jpg">
                 </div>
                 <div>
-                    <img class="zona_de_jugador_cartas_horizontal"
-                        src="Imagenes/Personajes/Rolland Banks/roland_delantero.png">
+                    <img class="zona_de_jugador_cartas_horizontal" id="Carta_Personaje"
+                        src="Imagenes/Personajes/Rolland_Banks/roland_delantero.png">
                 </div>
 
                 <!-- 1 Espacio Accesorio + 1 Espacio Cuerpo-->
@@ -412,6 +414,7 @@
 
         <!-- Nombre de las Cartas, traduccion -->
         <script src="Documentos JS/Cartas/console_log_nombre.js"></script>
+        <script src="Documentos JS/Personajes/Roland Banks/cambio_imagen.js"></script>
     </div>
 </body>
 <footer>

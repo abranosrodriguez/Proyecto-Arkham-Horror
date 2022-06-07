@@ -132,6 +132,7 @@ function acciones_Jugador(acciones_jugador) {
             if (acciones_jugador != 0) {
                 console.log("Ubicacion Estudio: Investigar")
                 actualizar_dificultad_estudio()
+
             } else if (acciones_jugador == 0) {
                 alert("Sin acciones")
                 acciones_jugador = 3

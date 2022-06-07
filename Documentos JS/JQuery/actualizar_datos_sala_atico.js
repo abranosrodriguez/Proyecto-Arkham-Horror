@@ -6,5 +6,6 @@ function actualizar_datos_sala_atico() {
     $("#Pistas_Personaje").html(RolandBanks.pistas)
     $("#Vida_Personaje").html(RolandBanks.vida)
     $("#Cordura_Personaje").html(RolandBanks.cordura)
+    $("#Pistas_Restantes").html(atico.pistas_investigador)
 
 }
