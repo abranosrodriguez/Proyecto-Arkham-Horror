@@ -16,7 +16,6 @@ function PopUp_Plan_1b() {
     window.addEventListener("click", (event) => {
         if (event.target == popUp_plan_1b) {
             popUp_plan_1b.style.display = "none";
-            actualizar_carta_plan_2a()
             prueba_plan_1b()
         }
     })
@@ -60,7 +59,6 @@ function PopUp_Plan_1b() {
     var spanPlan_2a = document.getElementsByClassName("Close_Plan2a")[0];
     spanPlan_2a.addEventListener("click", () => {
         PopUp_Plan_2a.style.display = "none";
-        actualizar_carta_plan_2a()
         prueba_plan_1b()
     })
 
@@ -68,7 +66,6 @@ function PopUp_Plan_1b() {
     window.addEventListener("click", (event) => {
         if (event.target == PopUp_Plan_2a) {
             PopUp_Plan_2a.style.display = "none";
-            actualizar_carta_plan_2a()
             prueba_plan_1b()
         }
     })

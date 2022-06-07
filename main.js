@@ -49,7 +49,7 @@ function main() {
     fase_1 = true
     fase_2 = false
     fase_3 = false
-    historia_mitos()
+
     //pruebas_prompt()
 
 

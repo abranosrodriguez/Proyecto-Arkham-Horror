@@ -31,5 +31,6 @@ function turno_acabado() {
     anadir_carta_robada_graficamente()
     //Sumamos los suministros correspondientes
     sumarSuministrosRoland()
+    historia_mitos()
 
 }

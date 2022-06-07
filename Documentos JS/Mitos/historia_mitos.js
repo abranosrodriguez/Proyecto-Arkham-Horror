@@ -5,6 +5,9 @@ function historia_mitos() {
             alert("FASE 3")
         } else if (ficha_mitos == 7 && fase_2 == true) {
             alert("FASE 2")
+            fase_2 = false
+            fase_3 = true
+            ficha_mitos = 0
         } else if (ficha_mitos == 3 && fase_1 == true) {
             fase_1 = false
             fase_2 = true
