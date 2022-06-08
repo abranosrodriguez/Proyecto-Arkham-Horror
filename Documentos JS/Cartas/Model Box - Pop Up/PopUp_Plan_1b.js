@@ -8,14 +8,12 @@ function PopUp_Plan_1b() {
     popUp_plan_1b.style.display = "block";                              // Activamos el contenido [ P1b ]
 
     spanPlan_1b.addEventListener("click", () => {                       // Si pincha en la [ x ]
-        popUp_plan_1b.style.display = "none";                           // Desactivamos el contenido
-        prueba_plan_1b()                                                // Hacemos la prueba (El usuario recibe 2 puntos de Horror || Descarta 1 Carta aleatoria de la mano)
+        popUp_plan_1b.style.display = "none";                           // Desactivamos el contenido   
     })
 
     window.addEventListener("click", (event) => {                       // Si pincha por fuera de la ventana
         if (event.target == popUp_plan_1b) {
             popUp_plan_1b.style.display = "none";
-            prueba_plan_1b()
         }
     })
 
@@ -52,13 +50,12 @@ function PopUp_Plan_1b() {
     var spanPlan_2a = document.getElementsByClassName("Close_Plan2a")[0];   // Si pincha en la [ x - plan2a ] cierra el contenido o model box
     spanPlan_2a.addEventListener("click", () => {
         PopUp_Plan_2a.style.display = "none";                           // Desactivamos el contenido o model box de: [ plan2a ]
-        prueba_plan_1b()                                                // Hacemos la prueba (El usuario recibe 2 puntos de Horror || Descarta 1 Carta aleatoria de la mano)
+
     })
 
     window.addEventListener("click", (event) => {                        // Si pincha fuera del model box o ventana de [ plan 2a ]
         if (event.target == PopUp_Plan_2a) {
             PopUp_Plan_2a.style.display = "none";                       // Desactivamos el contenido o model box de: [ plan2a ]
-            prueba_plan_1b()                                            // Hacemos la prueba (El usuario recibe 2 puntos de Horror || Descarta 1 Carta aleatoria de la mano)
         }
     })
 }

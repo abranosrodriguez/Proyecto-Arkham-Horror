@@ -14,8 +14,10 @@ function historia_mitos() {
             fase_2 = true                                                                           // Para poder pasar al segundo mas tarde
             ficha_mitos = 0                                                                         // Reseteamos la ficha de mitos
             alert("FASE 1")
-            PopUp_Plan_1b()                                                                         // Historia para el usuario
+            PopUp_Plan_1b()
+            // Historia para el usuario
             setTimeout(() => { clearInterval(timeHistoria_Mala); console.log("Tiempo Parado") })
+            prueba_plan_1b()
         }
         timeHistoria_Mala = setTimeout(temporizador_historia_mitos_malo, 2000); // (*)
     }, 2000);

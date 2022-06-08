@@ -13,7 +13,9 @@ function acciones_Jugador(acciones_jugador) {
                 ubicacion_estudio == false                                                      // Cambiamos la ubicacion del usuario
                 ubicacion_pasillo == true                                                       // Le decimos donde estará ahora
                 // setTimeout(() => { clearInterval(timerId); console.log("Tiempo Parado") })
+
                 PopUp_Acto_1b()                                                                 // Ponemos el model box de la historia buena
+
                 RolandBanks.pistas = 0                                                          // Bajamos el numero de pistas del personaje
                 $("#Pistas_Personaje").html(RolandBanks.pistas)                                 // Actualizamos el numero de pistas del usuario
                 return [ubicacion_estudio = false, ubicacion_pasillo = true]                    //Devolvemos la ubicacion del usuario
