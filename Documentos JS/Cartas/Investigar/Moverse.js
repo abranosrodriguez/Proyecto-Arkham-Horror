@@ -19,6 +19,7 @@ function moverse_tablero() {
             acciones_jugador--
             RolandBanks.obligado_Atico()
             actualizar_datos_sala_atico()
+
             document.getElementById("Investigar").disabled = false
             clase_carta = document.getElementsByClassName("lugares_cartas")
             clase_carta[3].src = ("Imagenes/Capitulo 1/Escenario/3_atico_trasero.png")
@@ -31,6 +32,7 @@ function moverse_tablero() {
         ubicacion_sotano = false
         ubicacion_pasillo = true
         acciones_jugador--
+        actualizar_datos_sala_pasillo()
         document.getElementById("Investigar").disabled = true
         return [ubicacion_pasillo = true, ubicacion_atico = false, ubicacion_sotano = false]
     }

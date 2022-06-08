@@ -7,4 +7,5 @@ function actualizar_datos_sala_sotano() {
     $("#Vida_Personaje").html(RolandBanks.vida)
     $("#Cordura_Personaje").html(RolandBanks.cordura)
     $("#Pistas_Restantes").html(sotano.pistas_investigador)
+    $("#Ubicacion_actual").html("Sotano")
 }

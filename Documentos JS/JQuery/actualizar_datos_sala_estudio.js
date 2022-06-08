@@ -1,11 +1,12 @@
-function actualizar_datos_sala_atico() {
-    $("#Dificultad").html(atico.dificultad)
+function actualizar_datos_sala_estudio() {
+    $("#Ubicacion_actual").html(" Estudio")
+
+    $("#Dificultad").html(estudio.dificultad)
     $("#Intelecto_Personaje").html(RolandBanks.intelecto)
     $("#Ficha_Sacada").html("")
     $("#Resultado").html("")
     $("#Pistas_Personaje").html(RolandBanks.pistas)
     $("#Vida_Personaje").html(RolandBanks.vida)
     $("#Cordura_Personaje").html(RolandBanks.cordura)
-    $("#Pistas_Restantes").html(atico.pistas_investigador)
-    $("#Ubicacion_actual").html("Atico")
-}
+    $("#Pistas_Restantes").html(estudio.pistas_investigador)
+}   
