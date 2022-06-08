@@ -1,4 +1,5 @@
 function actualizar_datos_bolsa_jq_sotano() {
+    // Actualizamos los datos del sotano
     $("#Dificultad").html(sotano.dificultad)
     $("#Intelecto_Personaje").html(RolandBanks.intelecto)
     $("#Ficha_Sacada").html(ficha)

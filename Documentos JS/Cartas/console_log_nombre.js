@@ -1,4 +1,5 @@
 function console_log_nombres() {
+    //Nos permite ver los nombres de las cartas, ya que las cartas están en inglés
     console.log("")
     console.log("Apoyo: ")
     console.log(".45 Automatic -> Automatica del .45 \nKnife -> Cuchillo \nFlashlight -> Linterna \nMachete -> Machete \nGuard Dog -> Perro Guardian \nPhysical Training -> Entrenamiento Fisico")

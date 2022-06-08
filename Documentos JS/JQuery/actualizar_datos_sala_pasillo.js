@@ -1,4 +1,5 @@
 function actualizar_datos_sala_pasillo() {
+    // Actualizamos los datos del pasillo
     $("#Dificultad").html(pasillo.dificultad)
     $("#Intelecto_Personaje").html(RolandBanks.intelecto)
     $("#Ficha_Sacada").html("")

@@ -1,4 +1,5 @@
 function actualizar_datos_bolsa_jq_atico() {
+    // Actualizamos los datos del atico
     $("#Dificultad").html(atico.dificultad)
     $("#Intelecto_Personaje").html(RolandBanks.intelecto)
     $("#Ficha_Sacada").html(ficha)

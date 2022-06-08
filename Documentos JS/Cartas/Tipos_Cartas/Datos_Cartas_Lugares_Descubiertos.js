@@ -1,4 +1,4 @@
-function Datos_Cartas_Lugares_Descubiertos() {
+function Datos_Cartas_Lugares_Descubiertos() {  //Datos de las cartas de lugares descubiertos
     var carta_lugar_revelado_estudio = new Cartas_Lugares_Revelados("Circulo Amarillo", "Estudio", "Descripcion", false, false, false, false, 2, 2, false, "-", false, "-", false, "-", false, 0)
     var carta_lugar_revelado_pasillo = new Cartas_Lugares_Revelados("Cuadrado Rojo", "Pasillo", "Descripcion", false, true, true, true, 1, 0, false, "-", false, "-", false, "-", false, 0)
     var carta_lugar_revelado_atico = new Cartas_Lugares_Revelados("Triangulo", "Atico", "Descripcion", true, false, false, false, 1, 2, true, "Descripcion Ob", false, "-", false, "-", true, 1)

@@ -1,4 +1,5 @@
 function actualizar_datos_sala_estudio() {
+    // Actualizamos los datos del estudio
     $("#Ubicacion_actual").html(" Estudio")
 
     $("#Dificultad").html(estudio.dificultad)

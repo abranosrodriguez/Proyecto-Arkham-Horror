@@ -1,12 +1,7 @@
 function robar_carta() {
     for (i = 0; i < mazo_cartas.length; i++) {
-        numero_aleatorio = Math.round(Math.random() * (i - 0))
+        numero_aleatorio = Math.round(Math.random() * (i - 0))  // Sacaremos un numero aleatorio
     }
-    //Sacamos una carta aleatoria del mazo
-    carta_robada = (mazo_cartas[numero_aleatorio])
-    // console.log(carta_robada)
-
-    carta_nueva_mano(carta_robada, mazo_cartas)
-
-    // console.log(carta_robada)
+    carta_robada = (mazo_cartas[numero_aleatorio])  // Donde el numero aleatorio será la carta que vamos a robar del mazo
+    carta_nueva_mano(carta_robada, mazo_cartas) // Funcion para añadirla a la mano
 }

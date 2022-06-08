@@ -1,4 +1,5 @@
 function actualizar_datos_sala_sotano() {
+    // Actualizamos los datos de sotano
     $("#Dificultad").html(sotano.dificultad)
     $("#Intelecto_Personaje").html(RolandBanks.intelecto)
     $("#Ficha_Sacada").html("")

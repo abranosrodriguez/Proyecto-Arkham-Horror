@@ -1,14 +1,13 @@
 function prueba_plan_1b() {
-    let opcion = prompt("Escoge una opcion: \n1 - Descarta una carta al azar \n2 - El investigador jefe recibe 2 puntos de horror")
+    // Funcion que se monstrará cuando la ficha de mitos sea 3 y después de salir de la plan 1b o 2a
+    let opcion = prompt("Escoge una opcion: \n1 - Descarta una carta al azar \n2 - El investigador jefe recibe 2 puntos de horror") // El usuario tendrá que escoger una opcion
     if (opcion == 1) {
-        console.log("Descarta una carta al azar")
-        quitar_carta_azar_mano()
-        actualizar_carta_plan_2a()
+        quitar_carta_azar_mano()                            // Si el usuario escogió uno quitaremos una carta al azar de la mano
+        actualizar_carta_plan_2a()                          // Actualizamos graficamente la carta al plan 2a
     } else if (opcion == 2) {
-        console.log("Recibe 2 puntos de horror")
-        RolandBanks.dano_Horror(2)
-        $("#Vida_Personaje").html(RolandBanks.vida)
-        $("#Cordura_Personaje").html(RolandBanks.cordura)
-        actualizar_carta_plan_2a()
+        RolandBanks.dano_Horror(2)                          // Si el usuario escogió la segunda opcion hacemos que reciba 2 puntos de horror o cordura
+        $("#Vida_Personaje").html(RolandBanks.vida)         // Actualizamos los datos de vida
+        $("#Cordura_Personaje").html(RolandBanks.cordura)   // Actualizamos los datos de cordura
+        actualizar_carta_plan_2a()                          // Actualizamos graficamente la carta al plan 2a
     }
 }

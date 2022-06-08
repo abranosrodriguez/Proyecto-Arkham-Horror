@@ -1,4 +1,4 @@
-function Datos_Cartas_Mitos_Traiciones() {
+function Datos_Cartas_Mitos_Traiciones() {  // Datos de las cartas de mitos de traiciones
     var carta_mito_resto_en_descomposicion = new Cartas_Mitos_Traiciones("Restos en Descomposicion", "Traicion", "Terror", true, "Des Re", false, "-", true, 3, false, 0, false)
     var carta_mito_manos_aferradoras = new Cartas_Mitos_Traiciones("Manos Aferradoras", "Traicion", "Riesgo", true, "Descr reve", false, "-", false, 0, true, 3, false)
     var carta_mito_voces_disonantes = new Cartas_Mitos_Traiciones("Voces Disonantes", "Traicion", "Terror", true, "Des reve", true, "Descri ob", false, 0, false, 0, true)

@@ -1,4 +1,4 @@
-function Datos_Cartas_Habilidad() {
+function Datos_Cartas_Habilidad() { //Datos de las cartas de habilidad
     var carta_agallas = new Cartas_Habilidad("Imagenes/Cartas/Habilidad/agallas.png", 0, "Habilidad", "Agallas", "Neutral", 2, 0, 0, 0, 0, "Innato", false, "-", 0, false, 0, false, 0, true, 1)
     var carta_coraje_inesperado = new Cartas_Habilidad("Imagenes/Cartas/Habilidad/coraje_inesperado.png", 0, "Habilidad", "Coraje Inesperado", "Neutral", 0, 0, 0, 0, 2, "Innato", false, "-", 0, false, 0, false, 0, false, 0)
     var carta_deduccion = new Cartas_Habilidad("Imagenes/Cartas/Habilidad/deduccion.png", 0, "Habilidad", "Deduccion", "Buscador", 0, 1, 0, 0, 0, "Experimentado", false, "-", 0, false, 0, true, 1, false, 0)

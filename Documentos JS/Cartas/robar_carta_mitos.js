@@ -4,5 +4,7 @@ function robar_carta_mitos() {
     }
 
     carta_robada_mitos = (mazo_mitos[numero_aleatorio_m])
-    // console.log(carta_robada_mitos)
+    console.log(carta_robada_mitos)
+    carta_nueva_mano(carta_robada_mitos, mazo_mitos)
+
 }

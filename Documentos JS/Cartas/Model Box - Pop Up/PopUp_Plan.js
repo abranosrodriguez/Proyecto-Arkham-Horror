@@ -1,21 +1,19 @@
 function PopUpPlan() {
-    var popPlan = document.getElementById("myHistoria_plan")
+    // Model Box de la Historia del Plan
+    var popPlan = document.getElementById("myHistoria_plan")                // Cogemos los datos correspondientes
     var btnPlan = document.getElementById("Boton_Historia_Plan")
     var spanPlan = document.getElementsByClassName("Close_Plan")[0];
 
-    // When the user clicks on the button, open the modal
-    btnPlan.addEventListener("click", () => {
-        popPlan.style.display = "block";
+    btnPlan.addEventListener("click", () => {                                // Si el usuario le da click en el boton activa el contenido de del plan
+        popPlan.style.display = "block";                                    // Activamos el contenido
     })
 
-    // When the user clicks on <span> (x), close the modal
-    spanPlan.addEventListener("click", () => {
-        popPlan.style.display = "none";
+    spanPlan.addEventListener("click", () => {                              // Si el usuario pincha en la [ x ] cierra el contenido
+        popPlan.style.display = "none";                                     // Desactivamos el contenido
 
     })
 
-    // When the user clicks anywhere outside of the modal, close it
-    window.addEventListener("click", (event) => {
+    window.addEventListener("click", (event) => {                           // Si el usuario pincha fuera de la ventana o model box cierra el contenido
         if (event.target == popPlan) {
             popPlan.style.display = "none";
 

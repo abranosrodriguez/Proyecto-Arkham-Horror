@@ -1,10 +1,10 @@
 function main() {
-    cambio_imagen_roland()
-    //Traduccion de los nombres
-    console_log_nombres()
+    cambio_imagen_roland()  // Cuando el usuario pinche en la imagen
+
+    console_log_nombres()           //Traduccion de los nombres
+
 
     //Pop Up
-
     PopUpHistoria()
     PopUpPlan()
     PopUpActo()
@@ -45,15 +45,12 @@ function main() {
     document.getElementById("Potenciar").style.visibility = 'hidden'
     document.getElementById("Moverse").style.visibility = 'hidden'
 
-
     fase_1 = true
     fase_2 = false
     fase_3 = false
 
     //pruebas_prompt()
 
-
     acciones_Jugador(acciones_jugador)
-
 }
 main()

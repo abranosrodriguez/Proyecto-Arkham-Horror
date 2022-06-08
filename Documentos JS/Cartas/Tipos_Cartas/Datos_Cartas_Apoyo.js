@@ -1,4 +1,4 @@
-function Datos_Cartas_Apoyo() {
+function Datos_Cartas_Apoyo() { //Datos de las cartas de apoyo
     var carta_auto_45 = new Cartas_Apoyo('Imagenes/Cartas/Apoyo/automatica_del_45.png', 4, "Apoyo", "Automatica del .45", "Guardian", 0, 0, 0, 1, 0, "Objecto | Arma | Arma de fuego", true, "Mano", 1, false, 0, true, 4, true, 1, "Combatir", "Descripcion", false, 0, "-")
     var carta_cuchillo = new Cartas_Apoyo("Imagenes/Cartas/Apoyo/cuchillo.png", 1, "Apoyo", "Cuchillo", "Neutral", 0, 0, 1, 0, 0, "Objecto | Arma | Cuerpo a Cuerpo", true, "Mano", 1, false, 0, false, 0, true, 2, "Combatir", "Descripcion", false, 0, "-")
     var carta_linterna = new Cartas_Apoyo("Imagenes/Cartas/Apoyo/linterna.png", 2, "Apoyo", "Linterna", "Neutral", 0, 1, 0, 0, 0, "Objecto | Herramienta", true, "Mano", 1, true, 3, false, 0, true, 1, "Investigar", "Descripcion", false, 0, "-")

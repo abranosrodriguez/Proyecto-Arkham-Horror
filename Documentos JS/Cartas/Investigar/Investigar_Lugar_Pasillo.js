@@ -1,4 +1,5 @@
 function Investigar_Lugar_Pasillo() {
+    //Ya que pasillo por defecto no tiene pistas esta function no serviría
     if (pasillo.pistas_investigador != 0) {
 
         investigar = prompt(`Nombre del Lugar: ${pasillo.nombre} \nNumero de pistas en el lugar: ${pasillo.pistas_investigador} \nQuieres usar alguna carta para potenciarte? Si | No | Comprobar`)

@@ -1,4 +1,4 @@
-function Datos_Cartas_Debilidad_Basica_Traicion() {
+function Datos_Cartas_Debilidad_Basica_Traicion() { //Datos de las cartas de debilidad de traicion
     var carta_debilidad_basica_amnesia = new Cartas_Debilidad_Basica_Traicion("Imagenes/Cartas/Debilidades/Traiciones/amnesia.png", "Traicion", "Amnesia", "Debilidad Basica", "Locura", "Descripcion", "-", "-", "-")
     var carta_debilidad_basica_paranoia = new Cartas_Debilidad_Basica_Traicion("Imagenes/Cartas/Debilidades/Traiciones/paranoia.png", "Traicion", "Paranoia", "Debilidad Basica", "Locura", "Descripcion", "-", "-", "-")
     var carta_debilidad_basica_embrujado = new Cartas_Debilidad_Basica_Traicion("Imagenes/Cartas/Debilidades/Traiciones/embrujado.png", "Traicion", "Embrujado", "Debilidad Basica", "Locura", "Descripcion", "Descripcion Obligado", 2, "Bla Bla")
