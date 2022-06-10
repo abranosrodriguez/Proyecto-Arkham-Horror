@@ -1,0 +1,83 @@
+.PopUp_historia_plan {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+.PopUp_Plan_Contenido {
+    background-color: #fefefe;
+    margin: 15% auto;
+    /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80vh;
+    /* Could be more or less, depending on screen size */
+}
+
+.Close_Plan {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.Close_Plan:hover,
+.Close_Plan:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#texto_historia_plan_1 {
+    font-family: "Times New Roman", Times, serif;
+    font-style: italic;
+}
+
+/* #Siguiente {
+    color: #aaaaaa;
+    
+    
+    font-weight: bold;
+} */
+
+/* #Siguiente:hover,
+#Siguiente:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#Anterior1:hover,
+#Anterior1:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#Siguiente {
+    font-weight: bolder;
+    float: right;
+    font-size: 16px;
+}
+
+#Anterior1 {
+    font-weight: bolder;
+    float: left;
+    font-size: 16px;
+} */

@@ -1,0 +1,108 @@
+#banner {
+    margin: 0.5rem;
+    width: 5vh;
+    display: block;
+    margin: 0px auto;
+}
+
+#banner_arkham {
+    width: 20vh;
+    margin-top: -1.5vh;
+}
+
+.zona_de_encuentros,
+.zona_de_jugador {
+    display: flex;
+    justify-content: center;
+    margin: 0.5rem;
+    margin: auto;
+    width: 50%;
+}
+
+/* Zona de Descarte, Carta DE Encuentro y Referencia de Escenario */
+.mazo_encuentros {
+    margin: 0.3vh;
+    border-radius: 1vh;
+    width: auto;
+    height: 20vh;
+}
+
+/* Cartas de Plan y Acto */
+.mazo_actos {
+    margin: 0.1vh;
+    border-radius: 1vh;
+    width: 20vh;
+    height: auto;
+}
+
+/* --------------------------------------------- */
+
+/* Lugares */
+#tablero {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 3vh;
+}
+
+.lugares {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.lugares_cartas {
+    margin: 0.3vh;
+    border-radius: 1vh;
+    width: auto;
+    height: 10vh;
+}
+
+#suministros {
+    justify-content: space-around;
+    width: auto;
+    height: 25vh;
+}
+
+#bolsa_fichas {
+    justify-content: space-around;
+    width: auto;
+    height: 20vh;
+}
+
+
+/* --------------------------------------------- */
+
+/* Zona del jugador */
+.zona_de_jugador_cartas {
+    margin: 0.5vh;
+    border-radius: 1vh;
+    width: auto;
+    height: 15vh;
+}
+
+.zona_de_jugador_cartas_horizontal {
+    margin: 0.5vh;
+    border-radius: 1vh;
+    width: 15vh;
+    height: auto;
+}
+
+/* Cartas mano jugador */
+#Tablero_Cartas_Jugador_Mano {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0.5rem;
+    margin: auto;
+
+
+}
+
+.Cartas_Mano {
+    margin: 0.3vh;
+    border-radius: 1vh;
+    width: auto;
+    height: 30vh;
+}

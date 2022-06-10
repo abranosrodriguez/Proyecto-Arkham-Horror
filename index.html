@@ -1,11 +1,470 @@
 <!DOCTYPE html>
 <html>
+<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 <link href="tablero.css" rel="stylesheet" type="text/css">
+<link href="Documentos JS/Cartas/Model Box - Pop Up/PopUp_Historia.css" rel="stylesheet" type="text/css">
+<link href="Documentos JS/Cartas/Model Box - Pop Up/PopUp_Plan.css" rel="stylesheet" type="text/css">
+<link href="Documentos JS/Cartas/Model Box - Pop Up/PopUp_Plan_1b.css" rel="stylesheet" type="text/css">
+<link href="Documentos JS/Cartas/Model Box - Pop Up/PopUp_Plan_2a.css" rel="stylesheet" type="text/css">
+<link href="Documentos JS/Cartas/Model Box - Pop Up/PopUp_Acto.css" rel="stylesheet" type="text/css">
+<link href="Documentos JS/Cartas/Model Box - Pop Up/PopUp_Acto_1b.css" rel="stylesheet" type="text/css">
+<link href="Documentos JS/Cartas/Model Box - Pop Up/PopUp_Acto_2a.css" rel="stylesheet" type="text/css">
+
+<link href="ampliacion_cartas.css" rel="stylesheet" type="text/css">
+<meta charset="UTF-8">
+<header>
+    <div id="banner">
+        <img id="banner_arkham" src="Imagenes/Banner.png">
+    </div>
+
+</header>
 
 <body>
+    <!--Tablero-->
+    <div>
+        <!-- Model Box -->
+        <button id="Boton_PopUp">Historia</button>
+        <div id="myPopUp" class="PopUp">
+            <div class="PopUp_Cotenido">
+                <span class="Close">&times;</span>
 
+                <h3 id="Los_Gules_Tienen_Hambre">Los gules tienen hambre...</h3>
+                <p id="texto_historia_popUp">
+                    Viernes, 18 de septiembre de 1925. Arkham, Massachusetts. Es el final de un largo y anormalmente
+                    caluroso verano. Las primeras señales de otoño empiezan a
+                    aparecer, pero persiste un sofocante e implacable aclor. Una ira silenciosa e impalpable atenaza la
+                    ciudad. El mal genio está a flor de piel, y solo en la última semana ha habido
+                    numerosas discusiones entre habitantes de la ciudad que han acabado en violentas peleas por simples
+                    malentedidos.<br><br>
+                    Y ahora ha llamado James Hankerson. Afirma haber encontrado un cuerpo desmembrado en su granero
+                    <br><br>
+                    Sería demasiado fácil echarle la culpa al tiempo. A esta ciudad le pasa algo, y este viejo adivino
+                    poco puede hacer para detener su caída. Mitos
+                    augurios indican que un pequeño grupo de investigadores se reunirá para arreglar las cosas. Estaré
+                    observando sus progresos... pero no tengo muchas esperanzas
+                </p>
+                <span id="Siguiente">Siguiente</span>
+
+            </div>
+        </div>
+        <div id="myPopUp2" class="PopUp">
+            <div class="PopUp_Cotenido">
+                <span class="Close">&times;</span>
+                <h3 id="Parte_I">Parte I: El encuentro</h3>
+                <p id="texto_Parte_I_popUp"> Tus compañeros y tú habeis estado investigando los extraños sucesos que
+                    están teniendo lugar en
+                    vuesta ciudad natal de Arkham, en Massachusetts.
+                    Durante las últimas semanas, varos habitantes de la ciudad han desaparecido misteriosamente. Y hace
+                    poco aparecienron sus cadáveres en el bosque, medio devorados y salvajemente mutilados.
+                    La policía y los periódicos han dicho que ha sido obra de animales, pero creéis que hay algo más en
+                    marcha. Os habéis reunido en cada del investigador jefe para deliberar sobre
+                    estos misteriosos acontecimientos.</p>
+                <span id="Anterior1">Anterior</span>
+            </div>
+        </div>
+
+        <button id="Boton_Historia_Plan">Historia Plan</button>
+        <div id="myHistoria_plan" class="PopUp_historia_plan">
+            <div class="PopUp_Plan_Contenido">
+                <span class="Close_Plan">&times;</span>
+                <h5>Plan 1a</h5>
+                <h3>¡¿Qué está pasando?!</h3>
+                <p id="texto_historia_plan_1">La noche está muy avanzada. Estáis metidos en tu estudio, investigando las
+                    sangrientas desapariciones que han estado teniendo lugar de la región.
+                    Tras varias horas de investigación, oís un extraño cántico proveniente de la salita que hay al final
+                    del pasillo. Al mismo tiempo, se oye un movimiento de tierra, como si algo
+                    estuviera cavando bajo el suelo
+                </p>
+                <span id="Siguiente_Plan_1b">Siguiente</span>
+            </div>
+        </div>
+        <div id="myPlan_1b" class="PopUp_plan_1b">
+            <div class="PopUp_Plan_Contenido_1b">
+                <span class="Close_Plan1b">&times;</span>
+                <h4>Plan 1b</h4>
+                <h3>Un lapso del tiempo</h3>
+                <p id="texto_historia_plan_1b">Tu casa sigue cambiando ante tus ojos. Las paredes se descomponen, y el
+                    suelo de muchas habitaciones se ha
+                    convertido en tierra. En casi como si os hubieran transportado a un lugar totalmente distinto,
+                    aunque aquí y allí reconoceis elementos de tu antiagua casa
+                </p>
+                <p id="Indicaciones_plan_1b">El investigador jefe debe decidir (elige una opcion) <br>
+                    Cada investigador descarta 1 carta al azar de su mano o el investigador jefe recibe 2 puntos de
+                    horror</p>
+                <span id="Anterior_plan_1a">Anterior</span>
+                <span id="Siguiente_plan_2a">Siguiente</span>
+            </div>
+        </div>
+
+        <div id="myPlan_2a" class="PopUp_plan_2a">
+            <div class="PopUp_Plan_Contenido_2a">
+                <span class="Close_Plan2a">&times;</span>
+                <h4>Plan 2a</h4>
+                <h3>El ascenso de los gles</h3>
+                <p id="texto_historia_plan_2a">El suelo cede ajo vuestros pies, y veis a una vasta red de túneles que se
+                    extiene en la oscuridad del subsuelo.
+                    Hay formas y siluetas de extrañas criaturas que se mueven velozmente por los corredores, tratando de
+                    encontrar la forma de subir. Es probable
+                    que no queráis estar aquí cuando lo hagan
+                </p>
+                <span id="Anterior_plan_1b">Anterior</span>
+            </div>
+        </div>
+
+        <!-- Actooo -->
+        <button id="Boton_Historia_Acto">Historia Acto</button>
+        <div id="myActo_plan" class="PopUp_acto_plan">
+            <div class="PopUp_Acto_Contenido">
+                <span class="Close_Acto">&times;</span>
+                <h5>Acto 1a</h5>
+                <h3>Atrapados</h3>
+                <p id="texto_historia_acto_1">Cuando vais a poneros en accion para investigar, la puerta del estudio se
+                    desvanece ante vuestro ojos, dejando una pared sólidaa.
+                    Estais atrapados en el estudio hasta que podáis encontrar otra forma de salir
+                </p>
+                <span id="Siguiente_Acto_1b">Siguiente</span>
+            </div>
+        </div>
+
+        <div id="myActo_1b" class="PopUp_acto_1b">
+            <div class="PopUp_Acto_Contenido_1b">
+                <span class="Close_Acto1b">&times;</span>
+                <h4>Acto 1b</h4>
+                <h3>La puerta del suelo</h3>
+                <p id="texto_historia_acto_1b">Os dais cuenta de que los de la alfomra recién comprada están
+                    deshilachadas y manchadas de barro. Al encontralo extraño,
+                    decidís apartar los muebles de la salida del estudio. Uno de vosotros gira lentamente el picaporte,
+                    y la puerta se abre para descubrir que bajo ella se encuentra el pasillo.
+                    <br><br>
+                    Saltáis por el umbral y caéis sobre una tierra blanda. La puerta del estudio se cierrade golpe sobre
+                    vuestra cabezas. Un olor a madera quemada llen el estrecho pasillo,
+                    mezclando con el hedor de la putrefacción y la descomposición.
+                </p>
+                <p id="Indicaciones_acto_1b">Pon en juego el Pasillo, el Sótano, el Ático y la Salita que habías puesto
+                    aparte.<br><br>
+                    Descata todos los Enemigos del Estudio<br><br>
+                    Coloca a todos los investigadores en el Pasillo<br><br>
+                    Retira el Estudio de la partida</p>
+                <span id="Anterior_acto_1a">Anterior</span>
+                <span id="Siguiente_acto_2a">Siguiente</span>
+            </div>
+        </div>
+
+        <div id="myActo_2a" class="PopUp_acto_2a">
+            <div class="PopUp_Acto_Contenido_2a">
+                <span class="Close_Acto2a">&times;</span>
+                <h4>Acto 2a</h4>
+                <h3>La barrera</h3>
+                <p id="texto_historia_acto_2a">Una brillante barrera os bloquea el paso hacia la salita. Al acercaros,
+                    un intenso calor os obliga a retroceder.
+                    Cógeis algo de tierra y la lanzáis contra la barrera, donnde para vuestro horror queda totalmente
+                    incinerada. Puede que en el sotano o el ático haya algo que os sirva de ayuda
+                </p>
+                <p id="Indicaciones_acto_2a">Obligado - Cuando acabe la ronda, los investigadores que estén en el
+                    Pasillo pueden, como grupo, gastar la cantidad necesaria de pistas para hacer avanzar el acto</p>
+                <span id="Anterior_acto_1b">Anterior</span>
+            </div>
+        </div>
+        <!-- --------------------- -->
+        <!--Zona de encuentros-->
+        <div class="zona_de_encuentros">
+            <div>
+                <img class="mazo_encuentros" src="Imagenes/Capitulo 1/Cartas_Traseras/encuentros_trasero.png">
+            </div>
+            <div>
+                <img class="mazo_encuentros" src="Imagenes/Capitulo 1/Cartas_Traseras/encuentros_trasero.png">
+            </div>
+            <div>
+                <img class="mazo_encuentros" src="Imagenes/Capitulo 1/Escenario_Bolsa/encuentro_bolsa_facil_normal.jpg">
+            </div>
+            <div>
+                <img class="mazo_actos" src="Imagenes/Capitulo 1/Plan/encuentro_1.jpg" id="imagen_historia_plan">
+            </div>
+            <div>
+                <img class="mazo_actos" src="Imagenes/Capitulo 1/Acto/encuentro_1.jpg" id="imagen_historia_acto">
+            </div>
+        </div>
+
+        <!--Tablero Lugares-->
+
+        <div id="tablero">
+            <div>
+                <img id="suministros" src="Imagenes/Suministros/suministros.jpg">
+            </div>
+            <div>
+                <div class="lugares">
+                    <div>
+                        <img class="lugares_cartas" id="lugar_1"
+                            src="Imagenes/Capitulo 1/Cartas_Traseras/encuentros_trasero_borde.png">
+                    </div>
+                    <div>
+                        <img class="lugares_cartas" id="lugar_2"
+                            src="Imagenes/Capitulo 1/Cartas_Traseras/encuentros_trasero_borde.png">
+                    </div>
+                    <div>
+                        <img class="lugares_cartas"
+                            src="Imagenes/Capitulo 1/Cartas_Traseras/encuentros_trasero_borde.png">
+                    </div>
+                </div>
+
+                <div class="lugares">
+
+                    <div>
+                        <img class="lugares_cartas" id="lugar_4" id="lugar_3"
+                            src="Imagenes/Capitulo 1/Cartas_Traseras/encuentros_trasero_borde.png">
+                    </div>
+                    <div>
+                        <img class="lugares_cartas" id="lugar_5" src="Imagenes/Capitulo 1/Escenario/1_escenario.png">
+                    </div>
+                    <div>
+                        <img class="lugares_cartas" id="lugar_6"
+                            src="Imagenes/Capitulo 1/Cartas_Traseras/encuentros_trasero_borde.png">
+                    </div>
+                </div>
+
+                <div class="lugares">
+                    <div>
+                        <img class="lugares_cartas" id="lugar_7"
+                            src="Imagenes/Capitulo 1/Cartas_Traseras/encuentros_trasero_borde.png">
+                    </div>
+                    <div>
+                        <img class="lugares_cartas" id="lugar_8"
+                            src="Imagenes/Capitulo 1/Cartas_Traseras/encuentros_trasero_borde.png">
+                    </div>
+                    <div>
+                        <img class="lugares_cartas" id="lugar_9"
+                            src="Imagenes/Capitulo 1/Cartas_Traseras/encuentros_trasero_borde.png">
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <img id="bolsa_fichas" src="Imagenes/Bolsa_Fichas/bolsa.jpg">
+                <div id="Debajo_bolsa">
+                    Pistas Restantes: <a id="Pistas_Restantes"></a><br>
+                    Dificultad: <a id="Dificultad"></a><br>
+                    Intelecto Personaje: <a id="Intelecto_Personaje"></a><br>
+                    Ficha: <a id="Ficha_Sacada"></a><br>
+                    Resultado: <a id="Resultado"><br>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Zona Jugador-->
+        <div>
+
+            <div class="zona_de_jugador">
+                <div>
+                    <img class="zona_de_jugador_cartas"
+                        src="Imagenes/Capitulo 1/Cartas_Traseras/encuentros_trasero_borde.png" id="Zona_Descarte">
+                    Suministros:<div id="Cuenta_Suministros"></div>
+                    <div><input type="button" value="Investigar" id="Investigar">
+                        <input type="button" value="Sin Potenciar" id="Sin_Potenciar"> <input type="button"
+                            value="Potenciar" id="Potenciar">
+                    </div>
+                    Vida: <a id="Vida_Personaje"></a><br>
+                    Cordura: <a id="Cordura_Personaje"></a>
+
+                    <br>
+                    <input type="button" value="Jugar Cartas" id="Jugar_Cartas">
+                    <input type="button" value="Moverse" id="Moverse">
+                </div>
+
+
+                <div>
+                    <img class="zona_de_jugador_cartas" id="zona_jugador_robar_carta"
+                        src="Imagenes/Capitulo 1/Cartas_Traseras/carta_trasero.jpg">
+                </div>
+                <div>
+                    <img class="zona_de_jugador_cartas_horizontal" id="Carta_Personaje"
+                        src="Imagenes/Personajes/Rolland_Banks/roland_delantero.png">
+                    Ubicación: <a id="Ubicacion_actual"></a><br>
+                    Pistas: <a id="Pistas_Personaje"></a><br>
+                </div>
+
+                <!-- 1 Espacio Accesorio + 1 Espacio Cuerpo-->
+                <div>
+                    <div>
+                        <img class="zona_de_jugador_cartas"
+                            src="Imagenes/Capitulo 1/Cartas_Traseras/encuentros_trasero_borde.png">
+                    </div>
+                    <div>
+                        <img class="zona_de_jugador_cartas"
+                            src="Imagenes/Capitulo 1/Cartas_Traseras/encuentros_trasero_borde.png">
+                    </div>
+                </div>
+
+                <!-- 1 Espacio Aliado + 1 adicional-->
+                <div>
+                    <div>
+                        <img class="zona_de_jugador_cartas"
+                            src="Imagenes/Capitulo 1/Cartas_Traseras/encuentros_trasero_borde.png">
+                    </div>
+                    <div>
+                        <img class="zona_de_jugador_cartas"
+                            src="Imagenes/Capitulo 1/Cartas_Traseras/encuentros_trasero_borde.png">
+                    </div>
+                </div>
+
+                <!-- 2 Espacio Arcanos-->
+                <div>
+                    <div>
+                        <img class="zona_de_jugador_cartas"
+                            src="Imagenes/Capitulo 1/Cartas_Traseras/encuentros_trasero_borde.png">
+                    </div>
+                    <div>
+                        <img class="zona_de_jugador_cartas"
+                            src="Imagenes/Capitulo 1/Cartas_Traseras/encuentros_trasero_borde.png">
+                    </div>
+                </div>
+
+                <!-- 2 Espacios Manos-->
+                <div>
+                    <div>
+                        <img class="zona_de_jugador_cartas" id="Mano 1"
+                            src="Imagenes/Capitulo 1/Cartas_Traseras/encuentros_trasero_borde.png">
+                    </div>
+                    <div>
+                        <img class="zona_de_jugador_cartas" id="Mano 2"
+                            src="Imagenes/Capitulo 1/Cartas_Traseras/encuentros_trasero_borde.png">
+                    </div>
+                </div>
+
+                <!-- Extra-->
+                <div>
+                    <div>
+                        <img class="zona_de_jugador_cartas"
+                            src="Imagenes/Capitulo 1/Cartas_Traseras/encuentros_trasero_borde.png">
+                    </div>
+                    <div>
+                        <img class="zona_de_jugador_cartas"
+                            src="Imagenes/Capitulo 1/Cartas_Traseras/encuentros_trasero_borde.png">
+                    </div>
+                </div>
+
+                <!-- Pistas y suministros-->
+                <div>
+                    <div>
+                        <img class="zona_de_jugador_cartas"
+                            src="Imagenes/Capitulo 1/Cartas_Traseras/encuentros_trasero_borde.png">
+                    </div>
+                    <div>
+                        <img class="zona_de_jugador_cartas"
+                            src="Imagenes/Capitulo 1/Cartas_Traseras/encuentros_trasero_borde.png">
+                    </div>
+                </div>
+            </div>
+            <!-- Cartas Mano Jugador -->
+            <div id="Tablero_Cartas_Jugador_Mano">
+
+            </div>
+        </div>
+
+        <script src="Documentos JS/Cartas/Model Box - Pop Up/PopUp_Historia.js"></script>
+        <script src="Documentos JS/Cartas/Model Box - Pop Up/PopUp_Plan.js"></script>
+        <script src="Documentos JS/Cartas/Model Box - Pop Up/PopUp_Plan_1b.js"></script>
+        <script src="Documentos JS/Cartas/Model Box - Pop Up/PopUp_Acto.js"></script>
+        <script src="Documentos JS/Cartas/Model Box - Pop Up/PopUp_Acto_1b.js"></script>
+
+
+        <!-- Personaje  -->
+        <script src="Documentos JS/Personajes/Personajes.js"></script>
+        <script src="Documentos JS/Personajes/Roland Banks/RolandBanks.js"></script>
+        <script src="Documentos JS/Personajes/Datos_Roland_Banks.js"></script>
+
+        <!-- Cartas Normales -->
+        <script src="Documentos JS/Cartas/Cartas.js"></script>
+        <script src="Documentos JS/Cartas/Tipos_Cartas/Cartas_Apoyo.js"></script>
+        <script src="Documentos JS/Cartas/Tipos_Cartas/Datos_Cartas_Apoyo.js"></script>
+        <script src="Documentos JS/Cartas/Tipos_Cartas/Cartas_Evento.js"></script>
+        <script src="Documentos JS/Cartas/Tipos_Cartas/Datos_Cartas_Evento.js"></script>
+        <script src="Documentos JS/Cartas/Tipos_Cartas/Cartas_Habilidad.js"></script>
+        <script src="Documentos JS/Cartas/Tipos_Cartas/Datos_Cartas_Habilidad.js"></script>
+        <script src="Documentos JS/Cartas/robar_cinco_cartas_turno_inicial.js"></script>
+
+        <!-- Cartas De traicion -->
+        <script src="Documentos JS/Cartas/Cartas_Debilidad_Basica.js"></script>
+        <script src="Documentos JS/Cartas/Tipos_Cartas/Cartas_Debilidad_Basica_Traicion.js"></script>
+        <script src="Documentos JS/Cartas/Tipos_Cartas/Datos_Cartas_Debilidad_Basica_Traicion.js"></script>
+        <script src="Documentos JS/Cartas/Tipos_Cartas/Cartas_Debilidad_Basica_Enemigo.js"></script>
+        <script src="Documentos JS/Cartas/Tipos_Cartas/Datos_Cartas_Debilidad_Basica_Enemigo.js"></script>
+
+        <!-- Cartas Mitos -->
+        <script src="Documentos JS/Cartas/Tipos_Cartas/Cartas_Mitos.js"></script>
+        <script src="Documentos JS/Cartas/Tipos_Cartas/Cartas_Mitos_Traiciones.js"></script>
+        <script src="Documentos JS/Cartas/Tipos_Cartas/Datos_Cartas_Mitos_Traiciones.js"></script>
+        <script src="Documentos JS/Cartas/Tipos_Cartas/Cartas_Mitos_Enemigos.js"></script>
+        <script src="Documentos JS/Cartas/Tipos_Cartas/Datos_Cartas_Mitos_Enemigos.js"></script>
+        <script src="Documentos JS/Cartas/Tipos_Cartas/Mazo_Cartas_Mitos.js"></script>
+        <script src="Documentos JS/Cartas/robar_carta_mitos.js"></script>
+
+        <script src="Documentos JS/Mitos/historia_mitos.js"></script>
+
+        <!-- Cartas Lugares -->
+        <script src="Documentos JS/Cartas/Cartas_Lugares.js"></script>
+        <script src="Documentos JS/Cartas/Tipos_Cartas/Cartas_Lugares_Descubiertos.js"></script>
+        <script src="Documentos JS/Cartas/Tipos_Cartas/Datos_Cartas_Lugares_Descubiertos.js"></script>
+
+        <!-- Mazo  -->
+        <script src="Documentos JS/Cartas/Tipos_Cartas/Datos_mazo.js"></script>
+        <script src="Documentos JS/Cartas/mazo.js"></script>
+        <script src="Documentos JS/Cartas/robar_carta.js"></script>
+        <script src="Documentos JS/Cartas/carta_nueva_mano.js"></script>
+
+        <script src="Documentos JS/Cartas/mazo_debilidades.js"></script>
+        <script src="Documentos JS/Cartas/robar_carta_debilidad.js"></script>
+
+        <script src="Documentos JS/Secuencia de Ronda/Fase de Investigacion/acciones_jugador.js"></script>
+        <script src="Documentos JS/Secuencia de Ronda/Fase de Investigacion/suministros.js"></script>
+
+        <script src="Documentos JS/Cartas/Pruebas/Prueba_Intelecto.js"></script>
+        <script src="Documentos JS/Cartas/Pruebas/Prueba_plan_1b.js"></script>
+        <script src="Documentos JS/Cartas/quitar_carta_azar_mano.js"></script>
+        <script src="Documentos JS/Cartas/Sacar_Ficha._Facil.js"></script>
+
+        <!-- Investigaciones -->
+        <script src="Documentos JS/Cartas/Investigar/Investigar_Lugar_Estudio.js"></script>
+        <script src="Documentos JS/Cartas/Investigar/Investigar_Lugar_Pasillo.js"></script>
+        <script src="Documentos JS/Cartas/Investigar/Investigar_Lugar_Atico.js"></script>
+        <script src="Documentos JS/Cartas/Investigar/Investigar_Lugar_Sotano.js"></script>
+        <script src="Documentos JS/Cartas/Investigar/Moverse.js"></script>
+
+        <!-- Jugar Cartas -->
+        <script src="Documentos JS/Cartas/jugar_cartas.js"></script>
+
+        <!-- Cartas Graficamente -->
+        <script src="Documentos JS/Cartas/anadir_carta_robada_graficamente.js"></script>
+        <script src="Documentos JS/Cartas/añadir_carta_descarte_graficamente.js"></script>
+        <script src="Documentos JS/Cartas/eliminar_carta_graficamente.js"></script>
+        <script src="Documentos JS/Mitos/añadir_graficamente_pasillo_sotano_atico.js"></script>
+        <script src="Documentos JS/Cartas/añadir_carta_a_la_mesa_graficamente.js"></script>
+        <script src="Documentos JS/Mitos/actualizar_carta_plan_2a.js"></script>
+
+        <!-- Cambiar la carta de estudio -->
+        <script src="Documentos JS/Mitos/carta_estudio.js"></script>
+        <script src="Documentos JS/Mitos/carta_pasillo.js"></script>
+
+        <!-- jq -->
+        <script src="Documentos JS/JQuery/actualizar_datos_bolsa_estudio.js"></script>
+        <script src="Documentos JS/JQuery/actualizar_dificultad_estudio.js"></script>
+        <script src="Documentos JS/JQuery/actualizar_datos_sala_estudio.js"></script>
+        <script src="Documentos JS/JQuery/actualizar_datos_bolsa_jq_atico.js"></script>
+        <script src="Documentos JS/JQuery/actualizar_datos_sala_pasillo.js"></script>
+        <script src="Documentos JS/JQuery/actualizar_datos_sala_atico.js"></script>
+        <script src="Documentos JS/JQuery/actualizar_datos_bolsa_jq_sotano.js"></script>
+        <script src="Documentos JS/JQuery/actualizar_datos_sala_sotano.js"></script>
+
+        <!-- Final de turno -->
+        <script src="Documentos JS/Personajes/Roland Banks/turno_acabado.js"></script>
+
+        <!-- Nombre de las Cartas, traduccion -->
+        <script src="Documentos JS/Cartas/console_log_nombre.js"></script>
+        <script src="Documentos JS/Personajes/Roland Banks/cambio_imagen.js"></script>
+    </div>
 </body>
 <footer>
+    <script src="pruebas_promp.js"></script>
     <script src="main.js"></script>
 </footer>
 
