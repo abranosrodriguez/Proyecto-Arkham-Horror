@@ -1,4 +1,16 @@
 function jugar_cartas() {
+    /**
+     * @param {boolean} mano_1 - Hueco 2 de la mesa para cartas de tipo apoyo de hueco mano
+     * @param {boolean} mano_2 - Hueco 2 de la mesa para cartas de tipo apoyo de hueco mano
+     * @param {boolean} mano_3 - Comprobacion de si las cartas de la mesa estan ocupadas
+     * @param {string} numero_mano - El usuario escoge que hueco de la mesa quiere eliminar
+     * @param {string} eliminar_una_carta_mano - Confirmación conforme el usuario desea borrar una carta de la mano
+     * @param {string} jugar_carta - Carta que el jugadro desea jugar
+     * 
+     * @param {Array} cartas_mano - Array de las cartas del jugador
+     * @param {Array} cartas_mesa_jugador -  Array de las cartas en la mesa
+     * 
+     */
     if (mano_3 == true) { // Si los 2 espacios de mano están ocupados
         let eliminar_una_carta_mano = prompt("Quieres eliminar una carta de la mesa co el hueco de la mano: Si | No?") // Preguntamos al usuario cual quiere sustitur
         if (eliminar_una_carta_mano == "si" || eliminar_una_carta_mano == "Si") {                           //Si escoge una opcion
