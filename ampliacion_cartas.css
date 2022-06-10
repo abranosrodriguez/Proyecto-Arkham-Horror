@@ -1,0 +1,20 @@
+#lugar_1:hover,
+#lugar_2:hover,
+#lugar_3:hover,
+#lugar_4:hover,
+#lugar_5:hover,
+#lugar_6:hover,
+#lugar_7:hover,
+#lugar_8:hover,
+#lugar_9:hover {
+    transform: scale(3);
+}
+
+#imagen_historia_acto:hover,
+#imagen_historia_plan:hover {
+    transform: scale(2);
+}
+
+#Carta_Personaje:hover {
+    transform: scale(3);
+}
